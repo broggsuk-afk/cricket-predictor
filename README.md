@@ -63,7 +63,7 @@ Nepal v UAE = men / international / associate; a local league = men / club; a sc
 `id`, `date` (UTC, e.g. `2026-10-09T08:00:00Z`), `match`, `format`, `venue` (venue id), `teamA`
 (home side, team id), `teamB`, `stage` (optional), `seriesNote`, `status`
 (`upcoming` | `live` | `completed` | `abandoned`), `model` (defaults to the competition's), `drawPct`,
-`summary`, `factors` (full/lite), `players` and `leaders` (refer to people by id, with `team: "A"|"B"`),
+`why` (forward-looking: why the favourite is expected to win, citing the evidence), `swing` (what would have to happen for the other side to win), `factors` (full/lite), `players` and `leaders` (refer to people by id, with `team: "A"|"B"`),
 and once finished `result: {winner, text}`. `predictedWinner` / `predictedPct` are set by `--lock`
 when the match starts and are never changed after that.
 

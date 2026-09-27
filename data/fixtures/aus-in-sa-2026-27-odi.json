@@ -14,7 +14,6 @@
       "status": "upcoming",
       "model": "full",
       "drawPct": 0,
-      "summary": "South Africa's spinners have beaten Australia's batting twice and Miller and Bavuma are in form. The series is already won, so SA may rest players, which keeps Australia in it.",
       "factors": [
         {
           "id": "form",
@@ -201,7 +200,9 @@
           "achievement": "2023 ODI World Cup winners under his coaching.",
           "concern": "Australia lost the 2025 World Test Championship final to South Africa."
         }
-      ]
+      ],
+      "why": "South Africa should win because their spinners have beaten Australia's batting in both games so far, Miller and Bavuma are in form, and they are at home.",
+      "swing": "The series is already won, so South Africa may rest players. If they do and Head or Marsh make a big score, Australia can take a consolation win."
     }
   ]
 }

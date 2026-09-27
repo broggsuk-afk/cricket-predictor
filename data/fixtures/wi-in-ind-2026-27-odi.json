@@ -14,7 +14,6 @@
       "status": "upcoming",
       "model": "full",
       "drawPct": 0,
-      "summary": "India chased 296 with more than eight overs to spare, led by hundreds from Kohli and Gill. West Indies' openers can score, but Kuldeep took the game away from them.",
       "factors": [
         {
           "id": "form",
@@ -184,7 +183,9 @@
           "achievement": "Has called this series a benchmark before the 2027 World Cup Qualifiers.",
           "concern": "West Indies have not won a series in India for 24 years."
         }
-      ]
+      ],
+      "why": "India should win because their top order is in form, with hundreds from Kohli and Gill in the opener, and Kuldeep's wrist spin has West Indies' batters in trouble on pitches that suit spin.",
+      "swing": "West Indies need their openers to turn another good start into a big total, and early wickets from their seamers. If India's top three fail, it becomes a contest."
     },
     {
       "id": "2026-10-03-ind-wi-odi3",
@@ -199,7 +200,6 @@
       "status": "upcoming",
       "model": "full",
       "drawPct": 0,
-      "summary": "Provisional. Based on the 1st ODI only; it will be updated after Guwahati.",
       "factors": [
         {
           "id": "form",
@@ -353,7 +353,9 @@
           "achievement": "Has called this series a benchmark before the 2027 World Cup Qualifiers.",
           "concern": "West Indies have not won a series in India for 24 years."
         }
-      ]
+      ],
+      "why": "India are provisional favourites thanks to stronger batting, Kuldeep's spin and home advantage. This pick will be updated after the 2nd ODI.",
+      "swing": "If India have already won the series they may rest senior players, which would give West Indies a much better chance."
     }
   ]
 }

@@ -1,9 +1,9 @@
 {
   "meta": {
-    "updatedAt": "2026-09-27T20:30:00+01:00",
-    "note": "Added free-licensed player photos from Wikimedia Commons, with credits."
+    "updatedAt": "2026-09-27T21:15:00+01:00",
+    "note": "Match explanations now say why the favourite is expected to win and what could change it."
   },
-  "builtAt": "2026-09-27T19:56:38+00:00",
+  "builtAt": "2026-09-27T20:07:59+00:00",
   "sections": [
     {
       "sport": "cricket",
@@ -72,7 +72,6 @@
       "status": "upcoming",
       "model": "full",
       "drawPct": 0,
-      "summary": "India chased 296 with more than eight overs to spare, led by hundreds from Kohli and Gill. West Indies' openers can score, but Kuldeep took the game away from them.",
       "factors": [
         {
           "id": "form",
@@ -159,6 +158,8 @@
           "note": "West Indies must win to keep the series alive and want a benchmark before February's World Cup Qualifiers."
         }
       ],
+      "why": "India should win because their top order is in form, with hundreds from Kohli and Gill in the opener, and Kuldeep's wrist spin has West Indies' batters in trouble on pitches that suit spin.",
+      "swing": "West Indies need their openers to turn another good start into a big total, and early wickets from their seamers. If India's top three fail, it becomes a contest.",
       "series": "West Indies tour of India 2026–27: ODIs",
       "sport": "cricket",
       "category": "men",
@@ -282,7 +283,6 @@
       "status": "upcoming",
       "model": "full",
       "drawPct": 0,
-      "summary": "South Africa's spinners have beaten Australia's batting twice and Miller and Bavuma are in form. The series is already won, so SA may rest players, which keeps Australia in it.",
       "factors": [
         {
           "id": "form",
@@ -369,6 +369,8 @@
           "note": "Series decided. SA may rest players before the Tests; Australia are playing for pride."
         }
       ],
+      "why": "South Africa should win because their spinners have beaten Australia's batting in both games so far, Miller and Bavuma are in form, and they are at home.",
+      "swing": "The series is already won, so South Africa may rest players. If they do and Head or Marsh make a big score, Australia can take a consolation win.",
       "series": "Australia tour of South Africa 2026–27: ODIs",
       "sport": "cricket",
       "category": "men",
@@ -512,7 +514,6 @@
       "status": "upcoming",
       "model": "full",
       "drawPct": 0,
-      "summary": "Provisional. Based on the 1st ODI only; it will be updated after Guwahati.",
       "factors": [
         {
           "id": "form",
@@ -599,6 +600,8 @@
           "note": "Unknown until the 2nd ODI result. India may rest players if the series is already won."
         }
       ],
+      "why": "India are provisional favourites thanks to stronger batting, Kuldeep's spin and home advantage. This pick will be updated after the 2nd ODI.",
+      "swing": "If India have already won the series they may rest senior players, which would give West Indies a much better chance.",
       "series": "West Indies tour of India 2026–27: ODIs",
       "sport": "cricket",
       "category": "men",
@@ -703,7 +706,6 @@
       "status": "upcoming",
       "model": "full",
       "drawPct": 20,
-      "summary": "Provisional. Home advantage and Maharaj against Australia's weakness to left-arm spin, set against South Africa's injured fast bowlers and Australia's strong Test attack.",
       "factors": [
         {
           "id": "form",
@@ -790,6 +792,8 @@
           "note": "World Test Championship points at stake for both sides."
         }
       ],
+      "why": "South Africa get a narrow edge from home advantage and Maharaj's left-arm spin, which Australia's batters have struggled with on this tour. Provisional until squads are named.",
+      "swing": "Australia's Test pace attack is stronger than South Africa's injury-hit one. If Rabada and the other injured quicks are not fit, Australia could become favourites.",
       "series": "Australia tour of South Africa 2026–27: Tests (World Test Championship)",
       "sport": "cricket",
       "category": "men",

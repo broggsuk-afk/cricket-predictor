@@ -72,7 +72,10 @@ h2{font-family:var(--display);font-weight:600;text-transform:uppercase;font-size
 .verdict{display:flex;flex-wrap:wrap;gap:8px 16px;align-items:center;justify-content:space-between}
 .verdict p{margin:0;font-weight:600}
 .chip{font-family:var(--mono);font-size:12px;padding:3px 8px;border-radius:3px;border:1px solid var(--line);color:var(--muted);white-space:nowrap}
-.summary{margin:0;color:var(--muted);max-width:70ch}
+.reason{display:grid;grid-template-columns:1fr 1fr;gap:12px 24px;border-top:1px solid var(--line);padding-top:14px}
+.reason h4{margin:0 0 4px;font-family:var(--mono);font-size:11px;font-weight:500;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+.reason p{margin:0;max-width:60ch}
+@media (max-width:620px){ .reason{grid-template-columns:1fr} }
 .edited{font-family:var(--mono);font-size:12px;color:var(--b)}
 
 /* factors */
@@ -174,7 +177,10 @@ td.num{font-variant-numeric:tabular-nums;font-family:var(--mono);font-size:13px}
     </div>
     <div class="meter" role="img" id="meter"><span class="ma" id="ma"></span><span class="md" id="md"></span><span class="mb" id="mb"></span></div>
     <div class="verdict"><p id="verdict"></p><span class="chip" id="conf"></span></div>
-    <p class="summary" id="summary"></p>
+    <div class="reason" id="reason">
+      <div><h4 id="whyLabel">Why</h4><p id="why"></p></div>
+      <div id="swingBox"><h4>What could change it</h4><p id="swing"></p></div>
+    </div>
     <p class="ratingsline" id="ratingsLine" hidden></p>
   </section>
 
@@ -365,7 +371,11 @@ function renderDetail(rebuild){
   $("meter").setAttribute("aria-label",`${fx.teamA} ${r.pa}%, ${fx.teamB} ${r.pb}%${r.pd?`, draw ${r.pd}%`:""}`);
   const fv = favText(fx, r);
   $("verdict").textContent = fv.v; $("conf").textContent = fv.c;
-  $("summary").textContent = fx.summary || "";
+  const favName = r.pa >= r.pb ? fx.teamA : fx.teamB;
+  $("whyLabel").textContent = Math.abs(r.pa - r.pb) < 6 ? "Why it's close" : `Why ${favName} are favourites`;
+  $("why").textContent = fx.why || fx.summary || "";
+  $("swing").textContent = fx.swing || "";
+  $("swingBox").hidden = !fx.swing;
   $("edited").hidden = !over || !Object.keys(over).length;
   const hasFactors = Array.isArray(fx.factors) && fx.factors.length > 0;
   $("factorsSec").hidden = !hasFactors; $("chartSec").hidden = !hasFactors;

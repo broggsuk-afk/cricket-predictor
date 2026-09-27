@@ -14,7 +14,6 @@
       "status": "upcoming",
       "model": "full",
       "drawPct": 20,
-      "summary": "Provisional. Home advantage and Maharaj against Australia's weakness to left-arm spin, set against South Africa's injured fast bowlers and Australia's strong Test attack.",
       "factors": [
         {
           "id": "form",
@@ -169,7 +168,9 @@
           "achievement": "Coached Australia to the 2023 World Test Championship and World Cup.",
           "concern": "Australia lost the 2025 World Test Championship final to South Africa."
         }
-      ]
+      ],
+      "why": "South Africa get a narrow edge from home advantage and Maharaj's left-arm spin, which Australia's batters have struggled with on this tour. Provisional until squads are named.",
+      "swing": "Australia's Test pace attack is stronger than South Africa's injury-hit one. If Rabada and the other injured quicks are not fit, Australia could become favourites."
     }
   ]
 }
