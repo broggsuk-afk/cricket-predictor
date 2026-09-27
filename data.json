@@ -1,0 +1,268 @@
+{
+  "meta": {
+    "updatedAt": "2026-09-27T17:55:00+01:00",
+    "note": "First build. Fixtures and factor scores researched from match reports up to 27 Sept 2026."
+  },
+  "fixtures": [
+    {
+      "id": "2026-09-30-sa-aus-odi3",
+      "date": "2026-09-30T11:30:00Z",
+      "series": "Australia tour of South Africa",
+      "match": "3rd ODI (D/N)",
+      "format": "ODI",
+      "venue": "NWC Oval, Potchefstroom",
+      "teamA": "South Africa",
+      "teamB": "Australia",
+      "seriesNote": "South Africa lead 2–0",
+      "status": "upcoming",
+      "drawPct": 0,
+      "summary": "South Africa's spinners have beaten Australia's batting twice. The series is already won, so SA may rest players, which keeps Australia in it.",
+      "factors": [
+        {
+          "id": "form",
+          "name": "Recent form",
+          "w": 1.0,
+          "v": 2,
+          "note": "SA won the 1st ODI by 67 runs and the 2nd by 32. Before the series, SA's last five ODIs were WWWLW and Australia's WWWWL."
+        },
+        {
+          "id": "h2h",
+          "name": "Head-to-head",
+          "w": 0.8,
+          "v": 2,
+          "note": "South Africa have won six bilateral ODI series in a row against Australia."
+        },
+        {
+          "id": "home",
+          "name": "Home conditions",
+          "w": 0.8,
+          "v": 1.5,
+          "note": "Early-season South African pitches and a home crowd. Day/night game."
+        },
+        {
+          "id": "spin",
+          "name": "Spin matchup",
+          "w": 1.0,
+          "v": 3,
+          "note": "Australia have the worst record of any side against left-arm spin since the last World Cup. Markram, Maharaj and Fortuin took 5 for 179 in the 2nd ODI."
+        },
+        {
+          "id": "bat",
+          "name": "Batting form",
+          "w": 1.0,
+          "v": 1,
+          "note": "Miller 142 off 93 and Bavuma 103 in the 2nd ODI, Breetzke a hundred in the 1st. Marsh and Head both made 84 for Australia."
+        },
+        {
+          "id": "bowl",
+          "name": "Bowling depth & injuries",
+          "w": 1.0,
+          "v": -2,
+          "note": "SA are without Rabada, Ngidi, Baartman and Maphaka (hamstrings). Edwards took 5-67 and Hazlewood 3-70 for Australia."
+        },
+        {
+          "id": "stakes",
+          "name": "Motivation & rotation",
+          "w": 0.8,
+          "v": -2,
+          "note": "Series decided. SA may rest players before the Tests; Australia are playing for pride."
+        }
+      ]
+    },
+    {
+      "id": "2026-09-30-ind-wi-odi2",
+      "date": "2026-09-30T08:30:00Z",
+      "series": "West Indies tour of India",
+      "match": "2nd ODI",
+      "format": "ODI",
+      "venue": "Barsapara Stadium, Guwahati",
+      "teamA": "India",
+      "teamB": "West Indies",
+      "seriesNote": "India lead 1–0",
+      "status": "upcoming",
+      "drawPct": 0,
+      "summary": "India chased 296 with more than eight overs to spare in the opener. West Indies' openers can score, but Kuldeep took the game away from them.",
+      "factors": [
+        {
+          "id": "form",
+          "name": "Recent form",
+          "w": 1.0,
+          "v": 3,
+          "note": "India won the 1st ODI by 8 wickets, chasing 296 in 41.4 overs."
+        },
+        {
+          "id": "h2h",
+          "name": "Head-to-head",
+          "w": 0.8,
+          "v": 3,
+          "note": "India have dominated bilateral ODIs against West Indies for more than a decade."
+        },
+        {
+          "id": "home",
+          "name": "Home conditions",
+          "w": 0.8,
+          "v": 3,
+          "note": "Home crowd and Indian pitches that suit India's spinners."
+        },
+        {
+          "id": "spin",
+          "name": "Spin matchup",
+          "w": 1.0,
+          "v": 2,
+          "note": "Kuldeep Yadav took 4-40 and removed both West Indies openers in the 1st ODI."
+        },
+        {
+          "id": "bat",
+          "name": "Batting form",
+          "w": 1.0,
+          "v": 2,
+          "note": "Kohli 139* off 88 and Gill 110. For West Indies, Greaves made 101 and Campbell 62 in a 135-run opening stand."
+        },
+        {
+          "id": "bowl",
+          "name": "Bowling depth & injuries",
+          "w": 1.0,
+          "v": 0.5,
+          "note": "No injury news for either side. West Indies' best bowling figures in the opener were Chase's 1-64."
+        },
+        {
+          "id": "stakes",
+          "name": "Motivation & rotation",
+          "w": 0.8,
+          "v": -0.5,
+          "note": "West Indies must win to keep the series alive."
+        }
+      ]
+    },
+    {
+      "id": "2026-10-03-ind-wi-odi3",
+      "date": "2026-10-03T08:30:00Z",
+      "series": "West Indies tour of India",
+      "match": "3rd ODI",
+      "format": "ODI",
+      "venue": "Maharaja Yadavindra Singh Stadium, Mullanpur",
+      "teamA": "India",
+      "teamB": "West Indies",
+      "seriesNote": "Provisional until the 2nd ODI is played",
+      "status": "upcoming",
+      "drawPct": 0,
+      "summary": "Provisional. Based on the 1st ODI only; it will be updated after Guwahati.",
+      "factors": [
+        {
+          "id": "form",
+          "name": "Recent form",
+          "w": 1.0,
+          "v": 3,
+          "note": "India won the 1st ODI by 8 wickets."
+        },
+        {
+          "id": "h2h",
+          "name": "Head-to-head",
+          "w": 0.8,
+          "v": 3,
+          "note": "India have dominated bilateral ODIs against West Indies for more than a decade."
+        },
+        {
+          "id": "home",
+          "name": "Home conditions",
+          "w": 0.8,
+          "v": 3,
+          "note": "Home crowd; Mullanpur is a newer venue with little ODI history."
+        },
+        {
+          "id": "spin",
+          "name": "Spin matchup",
+          "w": 1.0,
+          "v": 2,
+          "note": "Kuldeep Yadav took 4-40 in the 1st ODI."
+        },
+        {
+          "id": "bat",
+          "name": "Batting form",
+          "w": 1.0,
+          "v": 1.5,
+          "note": "Kohli and Gill both scored hundreds in the 1st ODI."
+        },
+        {
+          "id": "bowl",
+          "name": "Bowling depth & injuries",
+          "w": 1.0,
+          "v": 0.5,
+          "note": "No injury news for either side yet."
+        },
+        {
+          "id": "stakes",
+          "name": "Motivation & rotation",
+          "w": 0.8,
+          "v": 0,
+          "note": "Unknown until the 2nd ODI result. India may rotate if the series is already won."
+        }
+      ]
+    },
+    {
+      "id": "2026-10-09-sa-aus-test1",
+      "date": "2026-10-09T08:00:00Z",
+      "series": "Australia tour of South Africa",
+      "match": "1st Test",
+      "format": "Test",
+      "venue": "Kingsmead, Durban",
+      "teamA": "South Africa",
+      "teamB": "Australia",
+      "seriesNote": "Provisional until squads are named",
+      "status": "upcoming",
+      "drawPct": 20,
+      "summary": "Provisional. Home advantage and Maharaj against Australia's weakness to left-arm spin, set against South Africa's injured fast bowlers.",
+      "factors": [
+        {
+          "id": "form",
+          "name": "Recent form",
+          "w": 1.0,
+          "v": 0,
+          "note": "No recent Tests between these sides to compare; will update once squads and warm-up form are known."
+        },
+        {
+          "id": "h2h",
+          "name": "Head-to-head",
+          "w": 0.8,
+          "v": 1,
+          "note": "South Africa beat Australia in the 2025 World Test Championship final and won the last Test series in South Africa, 3–1 in 2018."
+        },
+        {
+          "id": "home",
+          "name": "Home conditions",
+          "w": 0.8,
+          "v": 3,
+          "note": "Home Test in Durban, where pitches often help seam early and spin later."
+        },
+        {
+          "id": "spin",
+          "name": "Spin matchup",
+          "w": 1.0,
+          "v": 1.5,
+          "note": "Australia have struggled against Maharaj and left-arm spin in the ODI series."
+        },
+        {
+          "id": "bat",
+          "name": "Batting form",
+          "w": 1.0,
+          "v": 0,
+          "note": "Test squads not yet confirmed."
+        },
+        {
+          "id": "bowl",
+          "name": "Bowling depth & injuries",
+          "w": 1.0,
+          "v": -2,
+          "note": "Rabada, Ngidi, Baartman and Maphaka all have hamstring injuries. Their Test availability is unclear."
+        },
+        {
+          "id": "stakes",
+          "name": "Motivation & rotation",
+          "w": 0.8,
+          "v": 0,
+          "note": "World Test Championship points at stake for both sides."
+        }
+      ]
+    }
+  ]
+}

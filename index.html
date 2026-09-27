@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="Daily win predictions for upcoming men's international cricket matches, based on form and player stats.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='13' fill='%230B7A4B'/%3E%3Cpath d='M9 8c5 5 5 11 0 16M23 8c-5 5-5 11 0 16' stroke='%23fff' stroke-width='2' fill='none'/%3E%3C/svg%3E">
+<title>Cricket Match Predictor</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Source+Sans+3:wght@400;600&family=JetBrains+Mono:wght@500&display=swap">
+<style>
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0}
+[hidden]{display:none!important}
+:root{
+  --bg:#F2F4EF; --surface:#FFFFFF; --ink:#17201B; --muted:#5B665F; --line:#D9DED6;
+  --a:#0B7A4B; --b:#B7860F; --draw:#8A948E; --track:#E6EAE3; --sel:#E4EDE6;
+  --good:#0B7A4B; --bad:#B3402E;
+  --display:"Barlow Condensed","Arial Narrow",sans-serif;
+  --body:"Source Sans 3",system-ui,-apple-system,sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#101612; --surface:#18201B; --ink:#E8EDE9; --muted:#9AA69F; --line:#2B3530;
+    --a:#3DBE84; --b:#E5B53E; --draw:#7D8882; --track:#26302A; --sel:#1F2B24;
+    --good:#3DBE84; --bad:#E0735F; color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#101612; --surface:#18201B; --ink:#E8EDE9; --muted:#9AA69F; --line:#2B3530;
+  --a:#3DBE84; --b:#E5B53E; --draw:#7D8882; --track:#26302A; --sel:#1F2B24;
+  --good:#3DBE84; --bad:#E0735F; color-scheme:dark;
+}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.5;padding-inline:16px;padding-block:24px 48px}
+.wrap{max-width:900px;margin:0 auto;display:flex;flex-direction:column;gap:28px}
+.eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+h1{font-family:var(--display);font-weight:700;font-size:clamp(34px,7vw,52px);line-height:1;margin:6px 0 8px;text-transform:uppercase;text-wrap:balance}
+h2{font-family:var(--display);font-weight:600;text-transform:uppercase;font-size:24px;margin:0;letter-spacing:.02em}
+.sub{color:var(--muted);max-width:64ch;margin:0}
+.status{display:flex;flex-wrap:wrap;gap:6px 14px;font-family:var(--mono);font-size:12px;color:var(--muted);margin-top:10px}
+.dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--draw);margin-right:6px;vertical-align:1px}
+.dot.live{background:var(--good)}
+.head{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap}
+
+/* fixture list */
+.fixtures{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px;margin-top:12px}
+.fx{text-align:left;font:inherit;color:inherit;background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:12px;cursor:pointer;display:flex;flex-direction:column;gap:6px}
+.fx:hover{border-color:var(--muted)}
+.fx[aria-pressed="true"]{border-color:var(--ink);background:var(--sel)}
+.fx .when{font-family:var(--mono);font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.05em;display:flex;justify-content:space-between;gap:6px}
+.fx .who{font-family:var(--display);font-weight:600;font-size:20px;text-transform:uppercase;line-height:1.1}
+.fx .mini{height:6px;border-radius:2px;overflow:hidden;display:flex;background:var(--track)}
+.fx .pick{font-size:13px;color:var(--muted)}
+.tag{font-family:var(--mono);font-size:11px;padding:1px 6px;border-radius:3px;border:1px solid var(--line)}
+
+/* board */
+.board{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:20px;display:flex;flex-direction:column;gap:16px}
+.fixture{font-family:var(--mono);font-size:12px;color:var(--muted);display:flex;flex-wrap:wrap;gap:6px 14px}
+.teams{display:grid;grid-template-columns:1fr auto 1fr;align-items:end;gap:12px}
+.team{display:flex;flex-direction:column;gap:2px;min-width:0}
+.team.b{text-align:right;align-items:flex-end}
+.tname{font-family:var(--display);font-weight:700;font-size:clamp(22px,5vw,32px);text-transform:uppercase;line-height:1.05;overflow-wrap:anywhere}
+.pct{font-family:var(--display);font-weight:600;font-size:clamp(44px,11vw,76px);line-height:.9;font-variant-numeric:tabular-nums}
+.team.a .pct{color:var(--a)} .team.b .pct{color:var(--b)}
+.mid{display:flex;flex-direction:column;align-items:center;gap:2px;padding-bottom:8px}
+.vs{font-family:var(--mono);color:var(--muted);font-size:13px}
+.drawpct{font-family:var(--mono);font-size:12px;color:var(--muted);text-align:center}
+.meter{height:14px;border-radius:3px;overflow:hidden;display:flex;background:var(--track)}
+.meter span,.mini span{display:block;height:100%;transition:width .35s ease}
+.ma{background:var(--a)} .mb{background:var(--b)} .md{background:var(--draw)}
+.verdict{display:flex;flex-wrap:wrap;gap:8px 16px;align-items:center;justify-content:space-between}
+.verdict p{margin:0;font-weight:600}
+.chip{font-family:var(--mono);font-size:12px;padding:3px 8px;border-radius:3px;border:1px solid var(--line);color:var(--muted);white-space:nowrap}
+.summary{margin:0;color:var(--muted);max-width:70ch}
+.edited{font-family:var(--mono);font-size:12px;color:var(--b)}
+
+/* factors */
+button.btn{font-family:var(--body);font-weight:600;font-size:14px;padding:7px 12px;border-radius:4px;border:1px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer}
+button.btn:hover{border-color:var(--muted)}
+button:focus-visible,input[type=range]:focus-visible{outline:2px solid var(--a);outline-offset:2px}
+.factors{display:flex;flex-direction:column;border-top:1px solid var(--line);margin-top:12px}
+.factor{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:8px 24px;padding:16px 0;border-bottom:1px solid var(--line)}
+.fname{font-weight:600;display:flex;justify-content:space-between;gap:8px}
+.fname .w{font-family:var(--mono);font-size:12px;color:var(--muted);font-weight:500}
+.note{color:var(--muted);font-size:14px;margin:4px 0 0}
+.ctrl{display:flex;flex-direction:column;gap:6px;justify-content:center}
+.ends{display:flex;justify-content:space-between;gap:8px;font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:.05em}
+.ends .ea{color:var(--a)} .ends .eb{color:var(--b);text-align:right}
+input[type=range]{width:100%;accent-color:var(--muted);margin:0}
+.readout{font-family:var(--mono);font-size:12px;text-align:center;font-variant-numeric:tabular-nums}
+.readout.pa{color:var(--a)} .readout.pb{color:var(--b)} .readout.pn{color:var(--muted)}
+
+/* chart */
+.chart{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:16px 20px;display:flex;flex-direction:column;gap:10px}
+.row{display:grid;grid-template-columns:150px 1fr;gap:12px;align-items:center;font-size:14px}
+.row .lbl{color:var(--muted);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.bar{position:relative;height:12px}
+.bar::before{content:"";position:absolute;left:50%;top:-4px;bottom:-4px;width:1px;background:var(--line)}
+.bar i{position:absolute;top:0;height:100%;border-radius:2px;transition:all .3s ease}
+.axis{display:grid;grid-template-columns:150px 1fr;gap:12px;font-family:var(--mono);font-size:11px;color:var(--muted)}
+.axis div{display:flex;justify-content:space-between;gap:8px}
+
+/* record */
+.record{overflow-x:auto;margin-top:12px}
+table{border-collapse:collapse;width:100%;font-size:14px;min-width:560px}
+th{font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);text-align:left;font-weight:500;padding:8px 10px;border-bottom:1px solid var(--line)}
+td{padding:10px;border-bottom:1px solid var(--line);vertical-align:top}
+td.num{font-variant-numeric:tabular-nums;font-family:var(--mono);font-size:13px}
+.ok{color:var(--good);font-weight:600} .miss{color:var(--bad);font-weight:600}
+.empty{color:var(--muted);font-size:14px;padding:14px 0;margin:0}
+.foot{font-size:13px;color:var(--muted);max-width:72ch}
+@media (max-width:620px){
+  .factor{grid-template-columns:1fr}
+  .row,.axis{grid-template-columns:100px 1fr}
+}
+@media (prefers-reduced-motion: reduce){ .meter span,.mini span,.bar i{transition:none} }
+</style>
+
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="eyebrow">International cricket · form &amp; player stats</div>
+    <h1>Who wins the next one?</h1>
+    <p class="sub">Predictions for upcoming men's internationals. Claude checks fixtures, results and player form every morning and re-scores each match. Pick a match to see why, and drag the sliders to test your own view.</p>
+    <div class="status"><span id="liveState"><span class="dot"></span>Loading latest…</span><span id="updated"></span><span id="accuracyTop"></span></div>
+  </header>
+
+  <section>
+    <div class="head"><h2>Upcoming</h2><span class="eyebrow" id="countUp"></span></div>
+    <div class="fixtures" id="fixtures"></div>
+  </section>
+
+  <section class="board" aria-live="polite" id="board">
+    <div class="fixture" id="fxMeta"></div>
+    <div class="teams">
+      <div class="team a"><span class="eyebrow">Team A</span><div class="tname" id="nameA"></div><div class="pct" id="pctA"></div></div>
+      <div class="mid"><span class="vs">v</span><span class="drawpct" id="pctD"></span></div>
+      <div class="team b"><span class="eyebrow">Team B</span><div class="tname" id="nameB"></div><div class="pct" id="pctB"></div></div>
+    </div>
+    <div class="meter" role="img" id="meter"><span class="ma" id="ma"></span><span class="md" id="md"></span><span class="mb" id="mb"></span></div>
+    <div class="verdict"><p id="verdict"></p><span class="chip" id="conf"></span></div>
+    <p class="summary" id="summary"></p>
+  </section>
+
+  <section>
+    <div class="head">
+      <h2>Factors</h2>
+      <div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap">
+        <span class="edited" id="edited" hidden>Your adjustments · not saved</span>
+        <button type="button" class="btn" id="reset">Reset to Claude's scores</button>
+      </div>
+    </div>
+    <div class="factors" id="factors"></div>
+  </section>
+
+  <section class="chart">
+    <div class="head"><h2>What's driving it</h2><span class="eyebrow">weighted pull per factor</span></div>
+    <div id="rows"></div>
+    <div class="axis"><span></span><div><span id="axA"></span><span>even</span><span id="axB"></span></div></div>
+  </section>
+
+  <section>
+    <div class="head"><h2>Track record</h2><span class="eyebrow" id="accuracy"></span></div>
+    <div class="record" id="record"></div>
+  </section>
+
+  <p class="foot">How it works: each factor is scored from −5 to +5 toward one team and multiplied by its weight. The total goes through a logistic curve, so no side ever reaches 0% or 100%. Tests also carry a draw chance. Claude locks in its pick when a match starts, then records the result, so the track record shows how the method is doing. This is a form guide for fun, not betting advice.</p>
+</div>
+
+<script>
+const SEED = {"meta": {"updatedAt": "2026-09-27T17:55:00+01:00", "note": "First build. Fixtures and factor scores researched from match reports up to 27 Sept 2026."}, "fixtures": [{"id": "2026-09-30-sa-aus-odi3", "date": "2026-09-30T11:30:00Z", "series": "Australia tour of South Africa", "match": "3rd ODI (D/N)", "format": "ODI", "venue": "NWC Oval, Potchefstroom", "teamA": "South Africa", "teamB": "Australia", "seriesNote": "South Africa lead 2–0", "status": "upcoming", "drawPct": 0, "summary": "South Africa's spinners have beaten Australia's batting twice. The series is already won, so SA may rest players, which keeps Australia in it.", "factors": [{"id": "form", "name": "Recent form", "w": 1.0, "v": 2, "note": "SA won the 1st ODI by 67 runs and the 2nd by 32. Before the series, SA's last five ODIs were WWWLW and Australia's WWWWL."}, {"id": "h2h", "name": "Head-to-head", "w": 0.8, "v": 2, "note": "South Africa have won six bilateral ODI series in a row against Australia."}, {"id": "home", "name": "Home conditions", "w": 0.8, "v": 1.5, "note": "Early-season South African pitches and a home crowd. Day/night game."}, {"id": "spin", "name": "Spin matchup", "w": 1.0, "v": 3, "note": "Australia have the worst record of any side against left-arm spin since the last World Cup. Markram, Maharaj and Fortuin took 5 for 179 in the 2nd ODI."}, {"id": "bat", "name": "Batting form", "w": 1.0, "v": 1, "note": "Miller 142 off 93 and Bavuma 103 in the 2nd ODI, Breetzke a hundred in the 1st. Marsh and Head both made 84 for Australia."}, {"id": "bowl", "name": "Bowling depth & injuries", "w": 1.0, "v": -2, "note": "SA are without Rabada, Ngidi, Baartman and Maphaka (hamstrings). Edwards took 5-67 and Hazlewood 3-70 for Australia."}, {"id": "stakes", "name": "Motivation & rotation", "w": 0.8, "v": -2, "note": "Series decided. SA may rest players before the Tests; Australia are playing for pride."}]}, {"id": "2026-09-30-ind-wi-odi2", "date": "2026-09-30T08:30:00Z", "series": "West Indies tour of India", "match": "2nd ODI", "format": "ODI", "venue": "Barsapara Stadium, Guwahati", "teamA": "India", "teamB": "West Indies", "seriesNote": "India lead 1–0", "status": "upcoming", "drawPct": 0, "summary": "India chased 296 with more than eight overs to spare in the opener. West Indies' openers can score, but Kuldeep took the game away from them.", "factors": [{"id": "form", "name": "Recent form", "w": 1.0, "v": 3, "note": "India won the 1st ODI by 8 wickets, chasing 296 in 41.4 overs."}, {"id": "h2h", "name": "Head-to-head", "w": 0.8, "v": 3, "note": "India have dominated bilateral ODIs against West Indies for more than a decade."}, {"id": "home", "name": "Home conditions", "w": 0.8, "v": 3, "note": "Home crowd and Indian pitches that suit India's spinners."}, {"id": "spin", "name": "Spin matchup", "w": 1.0, "v": 2, "note": "Kuldeep Yadav took 4-40 and removed both West Indies openers in the 1st ODI."}, {"id": "bat", "name": "Batting form", "w": 1.0, "v": 2, "note": "Kohli 139* off 88 and Gill 110. For West Indies, Greaves made 101 and Campbell 62 in a 135-run opening stand."}, {"id": "bowl", "name": "Bowling depth & injuries", "w": 1.0, "v": 0.5, "note": "No injury news for either side. West Indies' best bowling figures in the opener were Chase's 1-64."}, {"id": "stakes", "name": "Motivation & rotation", "w": 0.8, "v": -0.5, "note": "West Indies must win to keep the series alive."}]}, {"id": "2026-10-03-ind-wi-odi3", "date": "2026-10-03T08:30:00Z", "series": "West Indies tour of India", "match": "3rd ODI", "format": "ODI", "venue": "Maharaja Yadavindra Singh Stadium, Mullanpur", "teamA": "India", "teamB": "West Indies", "seriesNote": "Provisional until the 2nd ODI is played", "status": "upcoming", "drawPct": 0, "summary": "Provisional. Based on the 1st ODI only; it will be updated after Guwahati.", "factors": [{"id": "form", "name": "Recent form", "w": 1.0, "v": 3, "note": "India won the 1st ODI by 8 wickets."}, {"id": "h2h", "name": "Head-to-head", "w": 0.8, "v": 3, "note": "India have dominated bilateral ODIs against West Indies for more than a decade."}, {"id": "home", "name": "Home conditions", "w": 0.8, "v": 3, "note": "Home crowd; Mullanpur is a newer venue with little ODI history."}, {"id": "spin", "name": "Spin matchup", "w": 1.0, "v": 2, "note": "Kuldeep Yadav took 4-40 in the 1st ODI."}, {"id": "bat", "name": "Batting form", "w": 1.0, "v": 1.5, "note": "Kohli and Gill both scored hundreds in the 1st ODI."}, {"id": "bowl", "name": "Bowling depth & injuries", "w": 1.0, "v": 0.5, "note": "No injury news for either side yet."}, {"id": "stakes", "name": "Motivation & rotation", "w": 0.8, "v": 0, "note": "Unknown until the 2nd ODI result. India may rotate if the series is already won."}]}, {"id": "2026-10-09-sa-aus-test1", "date": "2026-10-09T08:00:00Z", "series": "Australia tour of South Africa", "match": "1st Test", "format": "Test", "venue": "Kingsmead, Durban", "teamA": "South Africa", "teamB": "Australia", "seriesNote": "Provisional until squads are named", "status": "upcoming", "drawPct": 20, "summary": "Provisional. Home advantage and Maharaj against Australia's weakness to left-arm spin, set against South Africa's injured fast bowlers.", "factors": [{"id": "form", "name": "Recent form", "w": 1.0, "v": 0, "note": "No recent Tests between these sides to compare; will update once squads and warm-up form are known."}, {"id": "h2h", "name": "Head-to-head", "w": 0.8, "v": 1, "note": "South Africa beat Australia in the 2025 World Test Championship final and won the last Test series in South Africa, 3–1 in 2018."}, {"id": "home", "name": "Home conditions", "w": 0.8, "v": 3, "note": "Home Test in Durban, where pitches often help seam early and spin later."}, {"id": "spin", "name": "Spin matchup", "w": 1.0, "v": 1.5, "note": "Australia have struggled against Maharaj and left-arm spin in the ODI series."}, {"id": "bat", "name": "Batting form", "w": 1.0, "v": 0, "note": "Test squads not yet confirmed."}, {"id": "bowl", "name": "Bowling depth & injuries", "w": 1.0, "v": -2, "note": "Rabada, Ngidi, Baartman and Maphaka all have hamstring injuries. Their Test availability is unclear."}, {"id": "stakes", "name": "Motivation & rotation", "w": 0.8, "v": 0, "note": "World Test Championship points at stake for both sides."}]}]};
+const K = 0.1;
+const $ = id => document.getElementById(id);
+let fixtures = SEED.fixtures.slice();
+let meta = SEED.meta;
+let selectedId = null;
+const overrides = {}; // fixtureId -> {factorId: value}; viewer's local what-if only
+
+function prob(fx, over){
+  let score = 0;
+  const contrib = fx.factors.map(f => {
+    const v = over && f.id in over ? over[f.id] : f.v;
+    const c = v * f.w; score += c; return {f, v, c};
+  });
+  const p = 1/(1+Math.exp(-K*score));
+  const d = (fx.drawPct||0)/100;
+  let pa = Math.round(p*(1-d)*100), pd = Math.round(d*100), pb = 100 - pa - pd;
+  return {pa, pb, pd, contrib};
+}
+function fmtDate(iso, opts){
+  try { return new Date(iso).toLocaleString("en-GB", opts); } catch(e){ return iso; }
+}
+function upcoming(){ return fixtures.filter(f=>f.status!=="completed").sort((a,b)=>a.date.localeCompare(b.date)); }
+function completed(){ return fixtures.filter(f=>f.status==="completed").sort((a,b)=>b.date.localeCompare(a.date)); }
+function esc(s){ return String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c])); }
+function favText(fx, r){
+  const top = Math.max(r.pa, r.pb);
+  if (Math.abs(r.pa - r.pb) < 6) return {v:"Too close to call.", c:"coin toss"};
+  const fav = r.pa > r.pb ? fx.teamA : fx.teamB;
+  const margin = Math.abs(r.pa - r.pb);
+  return {v:`Prediction: ${fav} to win.`, c: margin<15?"slight edge":margin<35?"clear favourite":"strong favourite"};
+}
+
+function renderList(){
+  const up = upcoming();
+  $("countUp").textContent = up.length ? `${up.length} match${up.length>1?"es":""}` : "";
+  if (!up.length){ $("fixtures").innerHTML = '<p class="empty">No upcoming fixtures loaded yet. The next daily update will add them.</p>'; return; }
+  if (!selectedId || !up.find(f=>f.id===selectedId)) selectedId = up[0].id;
+  $("fixtures").innerHTML = up.map(fx=>{
+    const r = prob(fx);
+    const fv = favText(fx, r);
+    return `<button type="button" class="fx" data-id="${esc(fx.id)}" aria-pressed="${fx.id===selectedId}">
+      <span class="when"><span>${esc(fmtDate(fx.date,{weekday:"short",day:"numeric",month:"short"}))}</span><span class="tag">${esc(fx.format)}</span></span>
+      <span class="who">${esc(fx.teamA)} v ${esc(fx.teamB)}</span>
+      <span class="mini"><span class="ma" style="width:${r.pa}%"></span><span class="md" style="width:${r.pd}%"></span><span class="mb" style="width:${r.pb}%"></span></span>
+      <span class="pick">${esc(fx.match)} · ${fv.c==="coin toss"?"Even":`${esc(r.pa>r.pb?fx.teamA:fx.teamB)} ${Math.max(r.pa,r.pb)}%`}</span>
+    </button>`;
+  }).join("");
+  document.querySelectorAll(".fx").forEach(b=>b.onclick=()=>{ selectedId=b.dataset.id; renderList(); renderDetail(true); });
+}
+
+function renderDetail(rebuild){
+  const fx = fixtures.find(f=>f.id===selectedId);
+  if (!fx){ $("board").hidden = true; return; }
+  $("board").hidden = false;
+  const over = overrides[fx.id];
+  const r = prob(fx, over);
+  $("fxMeta").innerHTML = [fx.match, fx.venue, fmtDate(fx.date,{weekday:"short",day:"numeric",month:"short",hour:"2-digit",minute:"2-digit"})+" UK", fx.seriesNote].filter(Boolean).map(s=>`<span>${esc(s)}</span>`).join("");
+  $("nameA").textContent = fx.teamA; $("nameB").textContent = fx.teamB;
+  $("pctA").textContent = r.pa+"%"; $("pctB").textContent = r.pb+"%";
+  $("pctD").textContent = r.pd ? `Draw ${r.pd}%` : "";
+  $("ma").style.width=r.pa+"%"; $("md").style.width=r.pd+"%"; $("mb").style.width=r.pb+"%";
+  $("meter").setAttribute("aria-label",`${fx.teamA} ${r.pa}%, ${fx.teamB} ${r.pb}%${r.pd?`, draw ${r.pd}%`:""}`);
+  const fv = favText(fx, r);
+  $("verdict").textContent = fv.v; $("conf").textContent = fv.c;
+  $("summary").textContent = fx.summary || "";
+  $("edited").hidden = !over || !Object.keys(over).length;
+
+  if (rebuild){
+    $("factors").innerHTML = fx.factors.map(f=>`
+      <div class="factor">
+        <div><div class="fname"><span>${esc(f.name)}</span><span class="w">×${Number(f.w).toFixed(1)}</span></div><p class="note">${esc(f.note)}</p></div>
+        <div class="ctrl">
+          <div class="ends"><span class="ea">← ${esc(fx.teamA)}</span><span class="eb">${esc(fx.teamB)} →</span></div>
+          <input type="range" id="f_${esc(f.id)}" min="-5" max="5" step="0.5" aria-label="${esc(f.name)}">
+          <div class="readout" id="r_${esc(f.id)}"></div>
+        </div>
+      </div>`).join("");
+    fx.factors.forEach(f=>{
+      const el = $("f_"+f.id);
+      el.value = -(over && f.id in over ? over[f.id] : f.v);
+      el.oninput = ()=>{ (overrides[fx.id] ||= {})[f.id] = -parseFloat(el.value); renderDetail(false); };
+    });
+  }
+  r.contrib.forEach(({f,v})=>{
+    const el = $("r_"+f.id); if (!el) return;
+    if (v===0){ el.textContent="Even"; el.className="readout pn"; }
+    else if (v>0){ el.textContent=`Favours ${fx.teamA} · ${v}`; el.className="readout pa"; }
+    else { el.textContent=`Favours ${fx.teamB} · ${Math.abs(v)}`; el.className="readout pb"; }
+  });
+  $("axA").textContent = fx.teamA; $("axB").textContent = fx.teamB;
+  const max = 5*Math.max(...fx.factors.map(f=>f.w));
+  $("rows").innerHTML = r.contrib.map(({f,c})=>{
+    const w = Math.abs(c)/max*50, left = c>0 ? 50-w : 50;
+    return `<div class="row"><span class="lbl" title="${esc(f.name)}">${esc(f.name)}</span><div class="bar"><i style="left:${left}%;width:${w}%;background:${c>0?"var(--a)":"var(--b)"}"></i></div></div>`;
+  }).join("");
+}
+
+function renderRecord(){
+  const done = completed();
+  const judged = done.filter(f=>f.result && f.predictedWinner && !["No result","Abandoned"].includes(f.result.winner));
+  const right = judged.filter(f=>f.predictedWinner===f.result.winner).length;
+  const acc = judged.length ? `${right} of ${judged.length} correct (${Math.round(right/judged.length*100)}%)` : "";
+  $("accuracy").textContent = acc;
+  $("accuracyTop").textContent = acc ? "Track record: "+acc : "";
+  if (!done.length){ $("record").innerHTML = '<p class="empty">No finished matches yet. Picks are locked when each match starts and marked right or wrong once the result is in.</p>'; return; }
+  $("record").innerHTML = `<table><thead><tr><th>Date</th><th>Match</th><th>Claude's pick</th><th>Result</th><th></th></tr></thead><tbody>${
+    done.map(f=>{
+      const res = f.result||{};
+      const judgedRow = f.predictedWinner && res.winner && !["No result","Abandoned"].includes(res.winner);
+      const ok = judgedRow && f.predictedWinner===res.winner;
+      return `<tr><td class="num">${esc(fmtDate(f.date,{day:"numeric",month:"short"}))}</td>
+        <td>${esc(f.teamA)} v ${esc(f.teamB)}<br><span class="note">${esc(f.match)}</span></td>
+        <td>${esc(f.predictedWinner||"–")}${f.predictedPct?` <span class="note">${f.predictedPct}%</span>`:""}</td>
+        <td>${esc(res.text||"Awaiting result")}</td>
+        <td>${judgedRow?(ok?'<span class="ok">Right</span>':'<span class="miss">Wrong</span>'):""}</td></tr>`;
+    }).join("")}</tbody></table>`;
+}
+
+function renderMeta(live){
+  $("liveState").innerHTML = live ? '<span class="dot live"></span>Latest data' : '<span class="dot"></span>Showing saved snapshot';
+  if (meta && meta.updatedAt) $("updated").textContent = "Updated " + fmtDate(meta.updatedAt,{weekday:"short",day:"numeric",month:"short",hour:"2-digit",minute:"2-digit"});
+}
+
+function renderAll(){ renderList(); renderDetail(true); renderRecord(); }
+
+$("reset").onclick = ()=>{ delete overrides[selectedId]; renderDetail(true); };
+
+renderMeta(false); renderAll();
+
+(async ()=>{
+  try {
+    const res = await fetch("https://raw.githubusercontent.com/broggsuk-afk/cricket-predictor/main/data.json?v=" + Date.now(), {cache:"no-store"});
+    if (!res.ok) return;
+    const data = await res.json();
+    if (Array.isArray(data.fixtures) && data.fixtures.length){ fixtures = data.fixtures; }
+    if (data.meta) meta = data.meta;
+    renderMeta(true); renderAll();
+  } catch(e){ /* keep the built-in snapshot */ }
+})();
+</script>
+
+</body>
+</html>
