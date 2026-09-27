@@ -1,0 +1,46 @@
+{
+  "competitions": [
+    {
+      "id": "wi-in-ind-2026-27-odi",
+      "name": "West Indies tour of India 2026–27: ODIs",
+      "sport": "cricket",
+      "category": "men",
+      "level": "international",
+      "tier": "full",
+      "type": "bilateral",
+      "format": "ODI",
+      "season": "2026-27",
+      "country": "IND",
+      "model": "full",
+      "active": true
+    },
+    {
+      "id": "aus-in-sa-2026-27-odi",
+      "name": "Australia tour of South Africa 2026–27: ODIs",
+      "sport": "cricket",
+      "category": "men",
+      "level": "international",
+      "tier": "full",
+      "type": "bilateral",
+      "format": "ODI",
+      "season": "2026-27",
+      "country": "RSA",
+      "model": "full",
+      "active": true
+    },
+    {
+      "id": "aus-in-sa-2026-27-test",
+      "name": "Australia tour of South Africa 2026–27: Tests (World Test Championship)",
+      "sport": "cricket",
+      "category": "men",
+      "level": "international",
+      "tier": "full",
+      "type": "bilateral",
+      "format": "Test",
+      "season": "2026-27",
+      "country": "RSA",
+      "model": "full",
+      "active": true
+    }
+  ]
+}

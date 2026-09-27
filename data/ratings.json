@@ -1,0 +1,4 @@
+{
+  "note": "Team strength ratings (Elo-style, 1500 = average) used by the ratings-only model. Keyed by team id.",
+  "ratings": {}
+}

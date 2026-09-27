@@ -1,0 +1,175 @@
+{
+  "competition": "aus-in-sa-2026-27-test",
+  "fixtures": [
+    {
+      "id": "2026-10-09-sa-aus-test1",
+      "competition": "aus-in-sa-2026-27-test",
+      "date": "2026-10-09T08:00:00Z",
+      "match": "1st Test",
+      "format": "Test",
+      "venue": "kingsmead-durban",
+      "teamA": "south-africa-men",
+      "teamB": "australia-men",
+      "seriesNote": "Provisional until squads are named",
+      "status": "upcoming",
+      "model": "full",
+      "drawPct": 20,
+      "summary": "Provisional. Home advantage and Maharaj against Australia's weakness to left-arm spin, set against South Africa's injured fast bowlers and Australia's strong Test attack.",
+      "factors": [
+        {
+          "id": "form",
+          "name": "Recent form",
+          "w": 1.0,
+          "v": 0,
+          "note": "No recent Tests between these sides to compare; will update once warm-up form is known."
+        },
+        {
+          "id": "h2h",
+          "name": "Head-to-head",
+          "w": 0.7,
+          "v": 1,
+          "note": "South Africa beat Australia in the 2025 World Test Championship final and won the last Test series in South Africa, 3–1 in 2018."
+        },
+        {
+          "id": "home",
+          "name": "Home advantage",
+          "w": 0.8,
+          "v": 3,
+          "note": "Home Test for South Africa."
+        },
+        {
+          "id": "venue",
+          "name": "Venue record",
+          "w": 0.5,
+          "v": 0,
+          "note": "Kingsmead record to be checked."
+        },
+        {
+          "id": "conditions",
+          "name": "Pitch, weather & toss",
+          "w": 0.5,
+          "v": 0,
+          "note": "Early-season Durban conditions; forecast to be checked closer to the match."
+        },
+        {
+          "id": "bat",
+          "name": "Batting strength",
+          "w": 1.0,
+          "v": 0,
+          "note": "Test squads not yet confirmed."
+        },
+        {
+          "id": "bowl",
+          "name": "Bowling attack",
+          "w": 1.0,
+          "v": -1.5,
+          "note": "Australia's Test attack is led by Cummins and Hazlewood. SA's depends on who recovers."
+        },
+        {
+          "id": "spin",
+          "name": "Spin matchup",
+          "w": 0.8,
+          "v": 1.5,
+          "note": "Australia have struggled against Maharaj and left-arm spin in the ODI series."
+        },
+        {
+          "id": "players",
+          "name": "Key player form",
+          "w": 0.8,
+          "v": 0,
+          "note": "To be scored once squads are named."
+        },
+        {
+          "id": "leaders",
+          "name": "Captain & coach record",
+          "w": 0.6,
+          "v": 0,
+          "note": "Both captains have won a World Test Championship final: Cummins in 2023, Bavuma in 2025."
+        },
+        {
+          "id": "squad",
+          "name": "Injuries & availability",
+          "w": 1.0,
+          "v": -1.5,
+          "note": "Rabada, Ngidi, Baartman and Maphaka all have hamstring injuries; their Test availability is unclear."
+        },
+        {
+          "id": "stakes",
+          "name": "Motivation & rotation",
+          "w": 0.6,
+          "v": 0,
+          "note": "World Test Championship points at stake for both sides."
+        }
+      ],
+      "players": [
+        {
+          "person": "keshav-maharaj",
+          "team": "A",
+          "role": "Left-arm spinner",
+          "stats": "Key wickets throughout the ODI series",
+          "achievement": "Australia's batters have not found an answer to him.",
+          "concern": "Durban pitches often help seam more than spin early on."
+        },
+        {
+          "person": "temba-bavuma",
+          "team": "A",
+          "role": "Captain, batter",
+          "stats": "103 in the 2nd ODI",
+          "achievement": "World Test Championship-winning captain.",
+          "concern": "Leading a side missing several fast bowlers."
+        },
+        {
+          "person": "pat-cummins",
+          "team": "B",
+          "role": "Captain, fast bowler",
+          "stats": "Played only two of Australia's last 31 ODIs",
+          "achievement": "Won the 2023 World Test Championship and 2023 World Cup as captain.",
+          "concern": "Limited match time this year."
+        },
+        {
+          "person": "travis-head",
+          "team": "B",
+          "role": "Batter",
+          "stats": "84 in the 2nd ODI",
+          "achievement": "Match-winning hundreds in the 2023 WTC and World Cup finals.",
+          "concern": "Australia's batting has struggled against spin on this tour."
+        }
+      ],
+      "leaders": [
+        {
+          "person": "temba-bavuma",
+          "team": "A",
+          "role": "Captain",
+          "record": "Test captain.",
+          "achievement": "Led South Africa to the 2023–25 World Test Championship title against Australia.",
+          "concern": "Fast-bowling depth is badly hit by injuries."
+        },
+        {
+          "person": "shukri-conrad",
+          "team": "A",
+          "role": "Head coach",
+          "record": "Test coach since January 2023.",
+          "achievement": "Coached SA to the 2023–25 World Test Championship title.",
+          "concern": "Eight Tests in four months will test the squad's depth."
+        },
+        {
+          "person": "pat-cummins",
+          "team": "B",
+          "role": "Captain",
+          "displayName": "Pat Cummins (Steve Smith vice-captain)",
+          "record": "Test captain since 2021.",
+          "achievement": "2023 World Test Championship and 2023 World Cup winner.",
+          "concern": "Lost the 2025 World Test Championship final to South Africa."
+        },
+        {
+          "person": "andrew-mcdonald",
+          "team": "B",
+          "role": "Head coach",
+          "record": "Head coach across formats.",
+          "achievement": "Coached Australia to the 2023 World Test Championship and World Cup.",
+          "concern": "Australia lost the 2025 World Test Championship final to South Africa."
+        }
+      ]
+    }
+  ]
+}

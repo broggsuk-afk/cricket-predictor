@@ -1,0 +1,207 @@
+{
+  "competition": "aus-in-sa-2026-27-odi",
+  "fixtures": [
+    {
+      "id": "2026-09-30-sa-aus-odi3",
+      "competition": "aus-in-sa-2026-27-odi",
+      "date": "2026-09-30T11:30:00Z",
+      "match": "3rd ODI (D/N)",
+      "format": "ODI",
+      "venue": "nwc-oval-potchefstroom",
+      "teamA": "south-africa-men",
+      "teamB": "australia-men",
+      "seriesNote": "South Africa lead 2–0",
+      "status": "upcoming",
+      "model": "full",
+      "drawPct": 0,
+      "summary": "South Africa's spinners have beaten Australia's batting twice and Miller and Bavuma are in form. The series is already won, so SA may rest players, which keeps Australia in it.",
+      "factors": [
+        {
+          "id": "form",
+          "name": "Recent form",
+          "w": 1.0,
+          "v": 2,
+          "note": "SA won the 1st ODI by 67 runs and the 2nd by 32. Australia had lost four of five ODI series before sweeping Zimbabwe 3–0."
+        },
+        {
+          "id": "h2h",
+          "name": "Head-to-head",
+          "w": 0.7,
+          "v": 2,
+          "note": "South Africa have won six bilateral ODI series in a row against Australia."
+        },
+        {
+          "id": "home",
+          "name": "Home advantage",
+          "w": 0.8,
+          "v": 1.5,
+          "note": "Early-season South African pitches and a home crowd."
+        },
+        {
+          "id": "venue",
+          "name": "Venue record",
+          "w": 0.5,
+          "v": 0,
+          "note": "Potchefstroom hosts few ODIs, so there is little venue history for either side."
+        },
+        {
+          "id": "conditions",
+          "name": "Pitch, weather & toss",
+          "w": 0.5,
+          "v": 0,
+          "note": "Day/night game. Dew later in the evening could help the side batting second; forecast to be checked on match day."
+        },
+        {
+          "id": "bat",
+          "name": "Batting strength",
+          "w": 1.0,
+          "v": 1,
+          "note": "SA made 297 and 365 batting first. Australia were bowled out for 230 and 333."
+        },
+        {
+          "id": "bowl",
+          "name": "Bowling attack",
+          "w": 1.0,
+          "v": 0,
+          "note": "SA's spinners have done the damage, but their pace attack is thin. Edwards (5-67) and Hazlewood (3-70) bowled well for Australia."
+        },
+        {
+          "id": "spin",
+          "name": "Spin matchup",
+          "w": 0.8,
+          "v": 3,
+          "note": "Australia have the worst record of any side against left-arm spin since the last World Cup. Markram, Maharaj and Fortuin took 5 for 179 in the 2nd ODI."
+        },
+        {
+          "id": "players",
+          "name": "Key player form",
+          "w": 0.8,
+          "v": 1,
+          "note": "Miller (142) and Bavuma (103) scored hundreds on Sunday and Breetzke made one in Durban. Head and Marsh both made 84."
+        },
+        {
+          "id": "leaders",
+          "name": "Captain & coach record",
+          "w": 0.6,
+          "v": 0.5,
+          "note": "Bavuma and Conrad lead a side on a long winning run against Australia. Marsh has captained Australia in 13 of their 31 ODIs since the 2023 World Cup."
+        },
+        {
+          "id": "squad",
+          "name": "Injuries & availability",
+          "w": 1.0,
+          "v": -2,
+          "note": "SA are without Rabada, Ngidi, Baartman, Maphaka and Burger. Green is managing a sore shoulder for Australia."
+        },
+        {
+          "id": "stakes",
+          "name": "Motivation & rotation",
+          "w": 0.6,
+          "v": -2,
+          "note": "Series decided. SA may rest players before the Tests; Australia are playing for pride."
+        }
+      ],
+      "players": [
+        {
+          "person": "david-miller",
+          "team": "A",
+          "role": "Batter",
+          "stats": "142 off 93 balls, 12 fours and 9 sixes (2nd ODI)",
+          "achievement": "Career-best ODI score and his 8th ODI hundred; beat his previous best of 139, also against Australia.",
+          "concern": "Now in the later stage of his career, so workload may be managed."
+        },
+        {
+          "person": "temba-bavuma",
+          "team": "A",
+          "role": "Captain, batter",
+          "stats": "103 off 116 balls (2nd ODI)",
+          "achievement": "His sixth ODI hundred, and his first in ODIs at his home ground.",
+          "concern": "It was his first ODI hundred in three years."
+        },
+        {
+          "person": "keshav-maharaj",
+          "team": "A",
+          "role": "Left-arm spinner",
+          "stats": "4 wickets in the 1st ODI",
+          "achievement": "Player of the series when SA won 2–1 in Australia in 2025.",
+          "concern": "With the pace attack depleted, SA rely heavily on him."
+        },
+        {
+          "person": "matthew-breetzke",
+          "team": "A",
+          "role": "Batter",
+          "stats": "ODI average 59.16 across 13 innings, strike rate near 100",
+          "achievement": "Hundred in the 1st ODI in Durban.",
+          "concern": "Still early in his ODI career."
+        },
+        {
+          "person": "travis-head",
+          "team": "B",
+          "role": "Opening batter",
+          "stats": "84 in the 2nd ODI",
+          "achievement": "One of the world's most dangerous openers; a big innings can decide a match.",
+          "concern": "Australia's top order has struggled against South Africa's spinners."
+        },
+        {
+          "person": "mitchell-marsh",
+          "team": "B",
+          "role": "Captain, batter",
+          "stats": "84 in the 2nd ODI",
+          "achievement": "Led the 3–0 sweep of Zimbabwe before this series.",
+          "concern": "Has lost this series 2–0 as captain."
+        },
+        {
+          "person": "jack-edwards",
+          "team": "B",
+          "role": "Seam-bowling all-rounder",
+          "stats": "5 for 67 (2nd ODI)",
+          "achievement": "First ODI five-wicket haul, restricting SA after they were 93 for 3.",
+          "concern": "Went for 67 runs as Miller attacked."
+        },
+        {
+          "person": "xavier-bartlett",
+          "team": "B",
+          "role": "Bowling all-rounder",
+          "stats": "122 ODI runs in 8 innings, two fifties",
+          "achievement": "Two ODI half-centuries.",
+          "concern": "Low total output with the bat so far."
+        }
+      ],
+      "leaders": [
+        {
+          "person": "temba-bavuma",
+          "team": "A",
+          "role": "Captain",
+          "record": "Has now won two ODI series against Australia as captain, including 2–1 in Australia in 2025.",
+          "achievement": "Led South Africa to the 2023–25 World Test Championship title, beating Australia in the final.",
+          "concern": "Carries both captaincy and top-order batting duties in a side short of senior bowlers."
+        },
+        {
+          "person": "shukri-conrad",
+          "team": "A",
+          "role": "Head coach",
+          "record": "Test coach since January 2023; took on the white-ball teams as well in 2025.",
+          "achievement": "Coached SA to the 2023–25 World Test Championship title.",
+          "concern": "Has to manage a fast-bowling injury crisis ahead of eight Tests this summer."
+        },
+        {
+          "person": "mitchell-marsh",
+          "team": "B",
+          "role": "Captain",
+          "displayName": "Mitchell Marsh (sharing with Pat Cummins)",
+          "record": "Captained 13 of Australia's 31 ODIs since the 2023 World Cup.",
+          "achievement": "Cummins led Australia to the 2023 World Cup title.",
+          "concern": "Australia lost four of five ODI series before the recent Zimbabwe sweep."
+        },
+        {
+          "person": "andrew-mcdonald",
+          "team": "B",
+          "role": "Head coach",
+          "record": "Head coach through Australia's 2023 World Cup win.",
+          "achievement": "2023 ODI World Cup winners under his coaching.",
+          "concern": "Australia lost the 2025 World Test Championship final to South Africa."
+        }
+      ]
+    }
+  ]
+}

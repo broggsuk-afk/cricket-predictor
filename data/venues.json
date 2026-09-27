@@ -1,0 +1,28 @@
+{
+  "venues": [
+    {
+      "id": "nwc-oval-potchefstroom",
+      "name": "NWC Oval",
+      "city": "Potchefstroom",
+      "country": "RSA"
+    },
+    {
+      "id": "barsapara-guwahati",
+      "name": "Barsapara Stadium",
+      "city": "Guwahati",
+      "country": "IND"
+    },
+    {
+      "id": "mys-stadium-mullanpur",
+      "name": "Maharaja Yadavindra Singh Stadium",
+      "city": "Mullanpur",
+      "country": "IND"
+    },
+    {
+      "id": "kingsmead-durban",
+      "name": "Kingsmead",
+      "city": "Durban",
+      "country": "RSA"
+    }
+  ]
+}

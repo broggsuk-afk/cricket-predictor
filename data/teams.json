@@ -1,0 +1,48 @@
+{
+  "teams": [
+    {
+      "id": "india-men",
+      "name": "India",
+      "short": "IND",
+      "sport": "cricket",
+      "category": "men",
+      "type": "national",
+      "level": "international",
+      "tier": "full",
+      "country": "IND"
+    },
+    {
+      "id": "west-indies-men",
+      "name": "West Indies",
+      "short": "WI",
+      "sport": "cricket",
+      "category": "men",
+      "type": "national",
+      "level": "international",
+      "tier": "full",
+      "country": "WI"
+    },
+    {
+      "id": "south-africa-men",
+      "name": "South Africa",
+      "short": "SA",
+      "sport": "cricket",
+      "category": "men",
+      "type": "national",
+      "level": "international",
+      "tier": "full",
+      "country": "RSA"
+    },
+    {
+      "id": "australia-men",
+      "name": "Australia",
+      "short": "AUS",
+      "sport": "cricket",
+      "category": "men",
+      "type": "national",
+      "level": "international",
+      "tier": "full",
+      "country": "AUS"
+    }
+  ]
+}

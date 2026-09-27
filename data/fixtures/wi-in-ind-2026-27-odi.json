@@ -1,0 +1,359 @@
+{
+  "competition": "wi-in-ind-2026-27-odi",
+  "fixtures": [
+    {
+      "id": "2026-09-30-ind-wi-odi2",
+      "competition": "wi-in-ind-2026-27-odi",
+      "date": "2026-09-30T08:30:00Z",
+      "match": "2nd ODI",
+      "format": "ODI",
+      "venue": "barsapara-guwahati",
+      "teamA": "india-men",
+      "teamB": "west-indies-men",
+      "seriesNote": "India lead 1–0",
+      "status": "upcoming",
+      "model": "full",
+      "drawPct": 0,
+      "summary": "India chased 296 with more than eight overs to spare, led by hundreds from Kohli and Gill. West Indies' openers can score, but Kuldeep took the game away from them.",
+      "factors": [
+        {
+          "id": "form",
+          "name": "Recent form",
+          "w": 1.0,
+          "v": 3,
+          "note": "India won the 1st ODI by 8 wickets, chasing 296 in 41.4 overs."
+        },
+        {
+          "id": "h2h",
+          "name": "Head-to-head",
+          "w": 0.7,
+          "v": 3,
+          "note": "West Indies have not won a series in India for 24 years."
+        },
+        {
+          "id": "home",
+          "name": "Home advantage",
+          "w": 0.8,
+          "v": 3,
+          "note": "Home crowd and Indian pitches that suit India's spinners."
+        },
+        {
+          "id": "venue",
+          "name": "Venue record",
+          "w": 0.5,
+          "v": 0.5,
+          "note": "India's home venue, though Guwahati has hosted relatively few ODIs."
+        },
+        {
+          "id": "conditions",
+          "name": "Pitch, weather & toss",
+          "w": 0.5,
+          "v": 0,
+          "note": "Late-season rain is possible in Guwahati; forecast to be checked on match day."
+        },
+        {
+          "id": "bat",
+          "name": "Batting strength",
+          "w": 1.0,
+          "v": 2,
+          "note": "India's top three scored 281 of their 300 runs. West Indies' 295 relied on the openers and Jangoo."
+        },
+        {
+          "id": "bowl",
+          "name": "Bowling attack",
+          "w": 1.0,
+          "v": 1.5,
+          "note": "Kuldeep took 4-40. West Indies' best figures were Chase's 1-64 as India cruised."
+        },
+        {
+          "id": "spin",
+          "name": "Spin matchup",
+          "w": 0.8,
+          "v": 2,
+          "note": "Kuldeep removed both West Indies openers to stop a 135-run start."
+        },
+        {
+          "id": "players",
+          "name": "Key player form",
+          "w": 0.8,
+          "v": 2,
+          "note": "Kohli 139* and Gill 110. Greaves made 101 for West Indies."
+        },
+        {
+          "id": "leaders",
+          "name": "Captain & coach record",
+          "w": 0.6,
+          "v": 1,
+          "note": "Gambhir coached India to the 2025 Champions Trophy. Hope and Sammy are rebuilding after West Indies missed the 2023 World Cup."
+        },
+        {
+          "id": "squad",
+          "name": "Injuries & availability",
+          "w": 1.0,
+          "v": 0,
+          "note": "No injury news for either side. Sammy plans to give all 15 squad members games, which may weaken West Indies' XI."
+        },
+        {
+          "id": "stakes",
+          "name": "Motivation & rotation",
+          "w": 0.6,
+          "v": 0,
+          "note": "West Indies must win to keep the series alive and want a benchmark before February's World Cup Qualifiers."
+        }
+      ],
+      "players": [
+        {
+          "person": "virat-kohli",
+          "team": "A",
+          "role": "Batter",
+          "stats": "139* off 88 balls with 9 sixes; 15,080 runs in 315 ODIs",
+          "achievement": "55th ODI hundred, passed 15,000 ODI runs and became the first to 7,000 ODI runs at home.",
+          "concern": "Returning after two months out of the side; workload is managed at this stage of his career."
+        },
+        {
+          "person": "shubman-gill",
+          "team": "A",
+          "role": "Captain, batter",
+          "stats": "110 off 108 balls (1st ODI)",
+          "achievement": "Added 151 with Kohli to finish the chase.",
+          "concern": "His first ODI series as captain, in Australia in 2025, was lost 2–1."
+        },
+        {
+          "person": "kuldeep-yadav",
+          "team": "A",
+          "role": "Left-arm wrist-spinner",
+          "stats": "4 for 40 in 10 overs (1st ODI)",
+          "achievement": "Turned the game by removing both openers after a 135-run stand.",
+          "concern": "None of note."
+        },
+        {
+          "person": "justin-greaves",
+          "team": "B",
+          "role": "Batting all-rounder",
+          "stats": "101 off 108 balls (1st ODI)",
+          "achievement": "Hundred on Indian soil against a full-strength attack.",
+          "concern": "Had little support after the openers fell."
+        },
+        {
+          "person": "john-campbell",
+          "team": "B",
+          "role": "Opening batter",
+          "stats": "62 off 60 balls (1st ODI)",
+          "achievement": "Shared a 135-run opening stand.",
+          "concern": "Fell to Kuldeep, as West Indies struggled against wrist spin."
+        },
+        {
+          "person": "amir-jangoo",
+          "team": "B",
+          "role": "Batter",
+          "stats": "58* off 43 balls (1st ODI)",
+          "achievement": "Fast finishing lifted West Indies to 295.",
+          "concern": "West Indies' middle order again left too much to one batter."
+        }
+      ],
+      "leaders": [
+        {
+          "person": "shubman-gill",
+          "team": "A",
+          "role": "Captain",
+          "record": "ODI captain since October 2025.",
+          "achievement": "Scored 754 runs in his first Test series as captain, in England in 2025.",
+          "concern": "Lost his first ODI series as captain 2–1 in Australia."
+        },
+        {
+          "person": "gautam-gambhir",
+          "team": "A",
+          "role": "Head coach",
+          "record": "Head coach across formats since 2024.",
+          "achievement": "India won the 2025 Champions Trophy with him as coach.",
+          "concern": "India were whitewashed 3–0 at home by New Zealand in Tests in 2024."
+        },
+        {
+          "person": "shai-hope",
+          "team": "B",
+          "role": "Captain",
+          "record": "Captain and wicketkeeper-batter.",
+          "achievement": "West Indies' most consistent ODI batter of recent years.",
+          "concern": "West Indies failed to qualify for the 2023 World Cup."
+        },
+        {
+          "person": "daren-sammy",
+          "team": "B",
+          "role": "Head coach",
+          "record": "Head coach; twice T20 World Cup-winning captain as a player.",
+          "achievement": "Has called this series a benchmark before the 2027 World Cup Qualifiers.",
+          "concern": "West Indies have not won a series in India for 24 years."
+        }
+      ]
+    },
+    {
+      "id": "2026-10-03-ind-wi-odi3",
+      "competition": "wi-in-ind-2026-27-odi",
+      "date": "2026-10-03T08:30:00Z",
+      "match": "3rd ODI",
+      "format": "ODI",
+      "venue": "mys-stadium-mullanpur",
+      "teamA": "india-men",
+      "teamB": "west-indies-men",
+      "seriesNote": "Provisional until the 2nd ODI is played",
+      "status": "upcoming",
+      "model": "full",
+      "drawPct": 0,
+      "summary": "Provisional. Based on the 1st ODI only; it will be updated after Guwahati.",
+      "factors": [
+        {
+          "id": "form",
+          "name": "Recent form",
+          "w": 1.0,
+          "v": 3,
+          "note": "India won the 1st ODI by 8 wickets."
+        },
+        {
+          "id": "h2h",
+          "name": "Head-to-head",
+          "w": 0.7,
+          "v": 3,
+          "note": "West Indies have not won a series in India for 24 years."
+        },
+        {
+          "id": "home",
+          "name": "Home advantage",
+          "w": 0.8,
+          "v": 3,
+          "note": "Home crowd for India."
+        },
+        {
+          "id": "venue",
+          "name": "Venue record",
+          "w": 0.5,
+          "v": 0,
+          "note": "Mullanpur is a newer venue with little ODI history."
+        },
+        {
+          "id": "conditions",
+          "name": "Pitch, weather & toss",
+          "w": 0.5,
+          "v": 0,
+          "note": "To be checked closer to match day."
+        },
+        {
+          "id": "bat",
+          "name": "Batting strength",
+          "w": 1.0,
+          "v": 1.5,
+          "note": "India's top three dominated the 1st ODI."
+        },
+        {
+          "id": "bowl",
+          "name": "Bowling attack",
+          "w": 1.0,
+          "v": 1.5,
+          "note": "Kuldeep took 4-40 in the 1st ODI; West Indies' attack was expensive."
+        },
+        {
+          "id": "spin",
+          "name": "Spin matchup",
+          "w": 0.8,
+          "v": 2,
+          "note": "West Indies struggled against Kuldeep's wrist spin."
+        },
+        {
+          "id": "players",
+          "name": "Key player form",
+          "w": 0.8,
+          "v": 1.5,
+          "note": "Kohli and Gill both scored hundreds in the 1st ODI."
+        },
+        {
+          "id": "leaders",
+          "name": "Captain & coach record",
+          "w": 0.6,
+          "v": 1,
+          "note": "India's leadership has the stronger recent record."
+        },
+        {
+          "id": "squad",
+          "name": "Injuries & availability",
+          "w": 1.0,
+          "v": 0,
+          "note": "No injury news yet. Both sides may rotate."
+        },
+        {
+          "id": "stakes",
+          "name": "Motivation & rotation",
+          "w": 0.6,
+          "v": 0,
+          "note": "Unknown until the 2nd ODI result. India may rest players if the series is already won."
+        }
+      ],
+      "players": [
+        {
+          "person": "virat-kohli",
+          "team": "A",
+          "role": "Batter",
+          "stats": "15,080 runs in 315 ODIs, 55 hundreds",
+          "achievement": "First batter to 7,000 ODI runs in home matches.",
+          "concern": "May be rested if the series is decided."
+        },
+        {
+          "person": "kuldeep-yadav",
+          "team": "A",
+          "role": "Left-arm wrist-spinner",
+          "stats": "4 for 40 in the 1st ODI",
+          "achievement": "Match-winning spell in the opener.",
+          "concern": "None of note."
+        },
+        {
+          "person": "justin-greaves",
+          "team": "B",
+          "role": "Batting all-rounder",
+          "stats": "101 in the 1st ODI",
+          "achievement": "West Indies' top scorer in the series so far.",
+          "concern": "Needs more support from the middle order."
+        },
+        {
+          "person": "shai-hope",
+          "team": "B",
+          "role": "Captain, wicketkeeper-batter",
+          "stats": "To be updated after the 2nd ODI",
+          "achievement": "West Indies' most consistent ODI batter of recent years.",
+          "concern": "Quiet start to the series."
+        }
+      ],
+      "leaders": [
+        {
+          "person": "shubman-gill",
+          "team": "A",
+          "role": "Captain",
+          "record": "ODI captain since October 2025.",
+          "achievement": "Hundred in the 1st ODI of this series.",
+          "concern": "Lost his first ODI series as captain 2–1 in Australia."
+        },
+        {
+          "person": "gautam-gambhir",
+          "team": "A",
+          "role": "Head coach",
+          "record": "Head coach across formats since 2024.",
+          "achievement": "India won the 2025 Champions Trophy with him as coach.",
+          "concern": "India were whitewashed 3–0 at home by New Zealand in Tests in 2024."
+        },
+        {
+          "person": "shai-hope",
+          "team": "B",
+          "role": "Captain",
+          "record": "Captain and wicketkeeper-batter.",
+          "achievement": "West Indies' most consistent ODI batter of recent years.",
+          "concern": "West Indies failed to qualify for the 2023 World Cup."
+        },
+        {
+          "person": "daren-sammy",
+          "team": "B",
+          "role": "Head coach",
+          "record": "Head coach; twice T20 World Cup-winning captain as a player.",
+          "achievement": "Has called this series a benchmark before the 2027 World Cup Qualifiers.",
+          "concern": "West Indies have not won a series in India for 24 years."
+        }
+      ]
+    }
+  ]
+}

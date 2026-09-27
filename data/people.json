@@ -1,0 +1,148 @@
+{
+  "people": [
+    {
+      "id": "amir-jangoo",
+      "name": "Amir Jangoo",
+      "teams": [
+        "west-indies-men"
+      ]
+    },
+    {
+      "id": "andrew-mcdonald",
+      "name": "Andrew McDonald",
+      "teams": [
+        "australia-men"
+      ],
+      "wiki": "Andrew McDonald (cricketer)"
+    },
+    {
+      "id": "daren-sammy",
+      "name": "Daren Sammy",
+      "teams": [
+        "west-indies-men"
+      ]
+    },
+    {
+      "id": "david-miller",
+      "name": "David Miller",
+      "teams": [
+        "south-africa-men"
+      ],
+      "wiki": "David Miller (South African cricketer)"
+    },
+    {
+      "id": "gautam-gambhir",
+      "name": "Gautam Gambhir",
+      "teams": [
+        "india-men"
+      ]
+    },
+    {
+      "id": "jack-edwards",
+      "name": "Jack Edwards",
+      "teams": [
+        "australia-men"
+      ],
+      "wiki": "Jack Edwards (cricketer, born 2000)"
+    },
+    {
+      "id": "john-campbell",
+      "name": "John Campbell",
+      "teams": [
+        "west-indies-men"
+      ],
+      "wiki": "John Campbell (cricketer)"
+    },
+    {
+      "id": "justin-greaves",
+      "name": "Justin Greaves",
+      "teams": [
+        "west-indies-men"
+      ]
+    },
+    {
+      "id": "keshav-maharaj",
+      "name": "Keshav Maharaj",
+      "teams": [
+        "south-africa-men"
+      ]
+    },
+    {
+      "id": "kuldeep-yadav",
+      "name": "Kuldeep Yadav",
+      "teams": [
+        "india-men"
+      ]
+    },
+    {
+      "id": "matthew-breetzke",
+      "name": "Matthew Breetzke",
+      "teams": [
+        "south-africa-men"
+      ]
+    },
+    {
+      "id": "mitchell-marsh",
+      "name": "Mitchell Marsh",
+      "teams": [
+        "australia-men"
+      ]
+    },
+    {
+      "id": "pat-cummins",
+      "name": "Pat Cummins",
+      "teams": [
+        "australia-men"
+      ]
+    },
+    {
+      "id": "shai-hope",
+      "name": "Shai Hope",
+      "teams": [
+        "west-indies-men"
+      ]
+    },
+    {
+      "id": "shubman-gill",
+      "name": "Shubman Gill",
+      "teams": [
+        "india-men"
+      ]
+    },
+    {
+      "id": "shukri-conrad",
+      "name": "Shukri Conrad",
+      "teams": [
+        "south-africa-men"
+      ]
+    },
+    {
+      "id": "temba-bavuma",
+      "name": "Temba Bavuma",
+      "teams": [
+        "south-africa-men"
+      ]
+    },
+    {
+      "id": "travis-head",
+      "name": "Travis Head",
+      "teams": [
+        "australia-men"
+      ]
+    },
+    {
+      "id": "virat-kohli",
+      "name": "Virat Kohli",
+      "teams": [
+        "india-men"
+      ]
+    },
+    {
+      "id": "xavier-bartlett",
+      "name": "Xavier Bartlett",
+      "teams": [
+        "australia-men"
+      ]
+    }
+  ]
+}
