@@ -1,7 +1,7 @@
 {
   "meta": {
     "updatedAt": "2026-09-27T20:30:00+01:00",
-    "note": "Model expanded to 12 factors, with key players and captains and coaches added to each match."
+    "note": "Added free-licensed player photos from Wikimedia Commons, with credits."
   },
   "fixtures": [
     {
@@ -18,34 +18,193 @@
       "drawPct": 0,
       "summary": "South Africa's spinners have beaten Australia's batting twice and Miller and Bavuma are in form. The series is already won, so SA may rest players, which keeps Australia in it.",
       "factors": [
-        {"id": "form", "name": "Recent form", "w": 1.0, "v": 2, "note": "SA won the 1st ODI by 67 runs and the 2nd by 32. Australia had lost four of five ODI series before sweeping Zimbabwe 3–0."},
-        {"id": "h2h", "name": "Head-to-head", "w": 0.7, "v": 2, "note": "South Africa have won six bilateral ODI series in a row against Australia."},
-        {"id": "home", "name": "Home advantage", "w": 0.8, "v": 1.5, "note": "Early-season South African pitches and a home crowd."},
-        {"id": "venue", "name": "Venue record", "w": 0.5, "v": 0, "note": "Potchefstroom hosts few ODIs, so there is little venue history for either side."},
-        {"id": "conditions", "name": "Pitch, weather & toss", "w": 0.5, "v": 0, "note": "Day/night game. Dew later in the evening could help the side batting second; forecast to be checked on match day."},
-        {"id": "bat", "name": "Batting strength", "w": 1.0, "v": 1, "note": "SA made 297 and 365 batting first. Australia were bowled out for 230 and 333."},
-        {"id": "bowl", "name": "Bowling attack", "w": 1.0, "v": 0, "note": "SA's spinners have done the damage, but their pace attack is thin. Edwards (5-67) and Hazlewood (3-70) bowled well for Australia."},
-        {"id": "spin", "name": "Spin matchup", "w": 0.8, "v": 3, "note": "Australia have the worst record of any side against left-arm spin since the last World Cup. Markram, Maharaj and Fortuin took 5 for 179 in the 2nd ODI."},
-        {"id": "players", "name": "Key player form", "w": 0.8, "v": 1, "note": "Miller (142) and Bavuma (103) scored hundreds on Sunday and Breetzke made one in Durban. Head and Marsh both made 84."},
-        {"id": "leaders", "name": "Captain & coach record", "w": 0.6, "v": 0.5, "note": "Bavuma and Conrad lead a side on a long winning run against Australia. Marsh has captained Australia in 13 of their 31 ODIs since the 2023 World Cup."},
-        {"id": "squad", "name": "Injuries & availability", "w": 1.0, "v": -2, "note": "SA are without Rabada, Ngidi, Baartman, Maphaka and Burger. Green is managing a sore shoulder for Australia."},
-        {"id": "stakes", "name": "Motivation & rotation", "w": 0.6, "v": -2, "note": "Series decided. SA may rest players before the Tests; Australia are playing for pride."}
+        {
+          "id": "form",
+          "name": "Recent form",
+          "w": 1.0,
+          "v": 2,
+          "note": "SA won the 1st ODI by 67 runs and the 2nd by 32. Australia had lost four of five ODI series before sweeping Zimbabwe 3–0."
+        },
+        {
+          "id": "h2h",
+          "name": "Head-to-head",
+          "w": 0.7,
+          "v": 2,
+          "note": "South Africa have won six bilateral ODI series in a row against Australia."
+        },
+        {
+          "id": "home",
+          "name": "Home advantage",
+          "w": 0.8,
+          "v": 1.5,
+          "note": "Early-season South African pitches and a home crowd."
+        },
+        {
+          "id": "venue",
+          "name": "Venue record",
+          "w": 0.5,
+          "v": 0,
+          "note": "Potchefstroom hosts few ODIs, so there is little venue history for either side."
+        },
+        {
+          "id": "conditions",
+          "name": "Pitch, weather & toss",
+          "w": 0.5,
+          "v": 0,
+          "note": "Day/night game. Dew later in the evening could help the side batting second; forecast to be checked on match day."
+        },
+        {
+          "id": "bat",
+          "name": "Batting strength",
+          "w": 1.0,
+          "v": 1,
+          "note": "SA made 297 and 365 batting first. Australia were bowled out for 230 and 333."
+        },
+        {
+          "id": "bowl",
+          "name": "Bowling attack",
+          "w": 1.0,
+          "v": 0,
+          "note": "SA's spinners have done the damage, but their pace attack is thin. Edwards (5-67) and Hazlewood (3-70) bowled well for Australia."
+        },
+        {
+          "id": "spin",
+          "name": "Spin matchup",
+          "w": 0.8,
+          "v": 3,
+          "note": "Australia have the worst record of any side against left-arm spin since the last World Cup. Markram, Maharaj and Fortuin took 5 for 179 in the 2nd ODI."
+        },
+        {
+          "id": "players",
+          "name": "Key player form",
+          "w": 0.8,
+          "v": 1,
+          "note": "Miller (142) and Bavuma (103) scored hundreds on Sunday and Breetzke made one in Durban. Head and Marsh both made 84."
+        },
+        {
+          "id": "leaders",
+          "name": "Captain & coach record",
+          "w": 0.6,
+          "v": 0.5,
+          "note": "Bavuma and Conrad lead a side on a long winning run against Australia. Marsh has captained Australia in 13 of their 31 ODIs since the 2023 World Cup."
+        },
+        {
+          "id": "squad",
+          "name": "Injuries & availability",
+          "w": 1.0,
+          "v": -2,
+          "note": "SA are without Rabada, Ngidi, Baartman, Maphaka and Burger. Green is managing a sore shoulder for Australia."
+        },
+        {
+          "id": "stakes",
+          "name": "Motivation & rotation",
+          "w": 0.6,
+          "v": -2,
+          "note": "Series decided. SA may rest players before the Tests; Australia are playing for pride."
+        }
       ],
       "players": [
-        {"team": "A", "name": "David Miller", "role": "Batter", "stats": "142 off 93 balls, 12 fours and 9 sixes (2nd ODI)", "achievement": "Career-best ODI score and his 8th ODI hundred; beat his previous best of 139, also against Australia.", "concern": "Now in the later stage of his career, so workload may be managed."},
-        {"team": "A", "name": "Temba Bavuma", "role": "Captain, batter", "stats": "103 off 116 balls (2nd ODI)", "achievement": "His sixth ODI hundred, and his first in ODIs at his home ground.", "concern": "It was his first ODI hundred in three years."},
-        {"team": "A", "name": "Keshav Maharaj", "role": "Left-arm spinner", "stats": "4 wickets in the 1st ODI", "achievement": "Player of the series when SA won 2–1 in Australia in 2025.", "concern": "With the pace attack depleted, SA rely heavily on him."},
-        {"team": "A", "name": "Matthew Breetzke", "role": "Batter", "stats": "ODI average 59.16 across 13 innings, strike rate near 100", "achievement": "Hundred in the 1st ODI in Durban.", "concern": "Still early in his ODI career."},
-        {"team": "B", "name": "Travis Head", "role": "Opening batter", "stats": "84 in the 2nd ODI", "achievement": "One of the world's most dangerous openers; a big innings can decide a match.", "concern": "Australia's top order has struggled against South Africa's spinners."},
-        {"team": "B", "name": "Mitchell Marsh", "role": "Captain, batter", "stats": "84 in the 2nd ODI", "achievement": "Led the 3–0 sweep of Zimbabwe before this series.", "concern": "Has lost this series 2–0 as captain."},
-        {"team": "B", "name": "Jack Edwards", "role": "Seam-bowling all-rounder", "stats": "5 for 67 (2nd ODI)", "achievement": "First ODI five-wicket haul, restricting SA after they were 93 for 3.", "concern": "Went for 67 runs as Miller attacked."},
-        {"team": "B", "name": "Xavier Bartlett", "role": "Bowling all-rounder", "stats": "122 ODI runs in 8 innings, two fifties", "achievement": "Two ODI half-centuries.", "concern": "Low total output with the bat so far."}
+        {
+          "team": "A",
+          "name": "David Miller",
+          "role": "Batter",
+          "stats": "142 off 93 balls, 12 fours and 9 sixes (2nd ODI)",
+          "achievement": "Career-best ODI score and his 8th ODI hundred; beat his previous best of 139, also against Australia.",
+          "concern": "Now in the later stage of his career, so workload may be managed.",
+          "wiki": "David Miller (South African cricketer)"
+        },
+        {
+          "team": "A",
+          "name": "Temba Bavuma",
+          "role": "Captain, batter",
+          "stats": "103 off 116 balls (2nd ODI)",
+          "achievement": "His sixth ODI hundred, and his first in ODIs at his home ground.",
+          "concern": "It was his first ODI hundred in three years."
+        },
+        {
+          "team": "A",
+          "name": "Keshav Maharaj",
+          "role": "Left-arm spinner",
+          "stats": "4 wickets in the 1st ODI",
+          "achievement": "Player of the series when SA won 2–1 in Australia in 2025.",
+          "concern": "With the pace attack depleted, SA rely heavily on him."
+        },
+        {
+          "team": "A",
+          "name": "Matthew Breetzke",
+          "role": "Batter",
+          "stats": "ODI average 59.16 across 13 innings, strike rate near 100",
+          "achievement": "Hundred in the 1st ODI in Durban.",
+          "concern": "Still early in his ODI career."
+        },
+        {
+          "team": "B",
+          "name": "Travis Head",
+          "role": "Opening batter",
+          "stats": "84 in the 2nd ODI",
+          "achievement": "One of the world's most dangerous openers; a big innings can decide a match.",
+          "concern": "Australia's top order has struggled against South Africa's spinners."
+        },
+        {
+          "team": "B",
+          "name": "Mitchell Marsh",
+          "role": "Captain, batter",
+          "stats": "84 in the 2nd ODI",
+          "achievement": "Led the 3–0 sweep of Zimbabwe before this series.",
+          "concern": "Has lost this series 2–0 as captain."
+        },
+        {
+          "team": "B",
+          "name": "Jack Edwards",
+          "role": "Seam-bowling all-rounder",
+          "stats": "5 for 67 (2nd ODI)",
+          "achievement": "First ODI five-wicket haul, restricting SA after they were 93 for 3.",
+          "concern": "Went for 67 runs as Miller attacked.",
+          "wiki": "Jack Edwards (cricketer, born 2000)"
+        },
+        {
+          "team": "B",
+          "name": "Xavier Bartlett",
+          "role": "Bowling all-rounder",
+          "stats": "122 ODI runs in 8 innings, two fifties",
+          "achievement": "Two ODI half-centuries.",
+          "concern": "Low total output with the bat so far."
+        }
       ],
       "leaders": [
-        {"team": "A", "role": "Captain", "name": "Temba Bavuma", "record": "Has now won two ODI series against Australia as captain, including 2–1 in Australia in 2025.", "achievement": "Led South Africa to the 2023–25 World Test Championship title, beating Australia in the final.", "concern": "Carries both captaincy and top-order batting duties in a side short of senior bowlers."},
-        {"team": "A", "role": "Head coach", "name": "Shukri Conrad", "record": "Test coach since January 2023; took on the white-ball teams as well in 2025.", "achievement": "Coached SA to the 2023–25 World Test Championship title.", "concern": "Has to manage a fast-bowling injury crisis ahead of eight Tests this summer."},
-        {"team": "B", "role": "Captain", "name": "Mitchell Marsh (sharing with Pat Cummins)", "record": "Captained 13 of Australia's 31 ODIs since the 2023 World Cup.", "achievement": "Cummins led Australia to the 2023 World Cup title.", "concern": "Australia lost four of five ODI series before the recent Zimbabwe sweep."},
-        {"team": "B", "role": "Head coach", "name": "Andrew McDonald", "record": "Head coach through Australia's 2023 World Cup win.", "achievement": "2023 ODI World Cup winners under his coaching.", "concern": "Australia lost the 2025 World Test Championship final to South Africa."}
+        {
+          "team": "A",
+          "role": "Captain",
+          "name": "Temba Bavuma",
+          "record": "Has now won two ODI series against Australia as captain, including 2–1 in Australia in 2025.",
+          "achievement": "Led South Africa to the 2023–25 World Test Championship title, beating Australia in the final.",
+          "concern": "Carries both captaincy and top-order batting duties in a side short of senior bowlers."
+        },
+        {
+          "team": "A",
+          "role": "Head coach",
+          "name": "Shukri Conrad",
+          "record": "Test coach since January 2023; took on the white-ball teams as well in 2025.",
+          "achievement": "Coached SA to the 2023–25 World Test Championship title.",
+          "concern": "Has to manage a fast-bowling injury crisis ahead of eight Tests this summer."
+        },
+        {
+          "team": "B",
+          "role": "Captain",
+          "name": "Mitchell Marsh (sharing with Pat Cummins)",
+          "record": "Captained 13 of Australia's 31 ODIs since the 2023 World Cup.",
+          "achievement": "Cummins led Australia to the 2023 World Cup title.",
+          "concern": "Australia lost four of five ODI series before the recent Zimbabwe sweep."
+        },
+        {
+          "team": "B",
+          "role": "Head coach",
+          "name": "Andrew McDonald",
+          "record": "Head coach through Australia's 2023 World Cup win.",
+          "achievement": "2023 ODI World Cup winners under his coaching.",
+          "concern": "Australia lost the 2025 World Test Championship final to South Africa.",
+          "wiki": "Andrew McDonald (cricketer)"
+        }
       ]
     },
     {
@@ -62,32 +221,175 @@
       "drawPct": 0,
       "summary": "India chased 296 with more than eight overs to spare, led by hundreds from Kohli and Gill. West Indies' openers can score, but Kuldeep took the game away from them.",
       "factors": [
-        {"id": "form", "name": "Recent form", "w": 1.0, "v": 3, "note": "India won the 1st ODI by 8 wickets, chasing 296 in 41.4 overs."},
-        {"id": "h2h", "name": "Head-to-head", "w": 0.7, "v": 3, "note": "West Indies have not won a series in India for 24 years."},
-        {"id": "home", "name": "Home advantage", "w": 0.8, "v": 3, "note": "Home crowd and Indian pitches that suit India's spinners."},
-        {"id": "venue", "name": "Venue record", "w": 0.5, "v": 0.5, "note": "India's home venue, though Guwahati has hosted relatively few ODIs."},
-        {"id": "conditions", "name": "Pitch, weather & toss", "w": 0.5, "v": 0, "note": "Late-season rain is possible in Guwahati; forecast to be checked on match day."},
-        {"id": "bat", "name": "Batting strength", "w": 1.0, "v": 2, "note": "India's top three scored 281 of their 300 runs. West Indies' 295 relied on the openers and Jangoo."},
-        {"id": "bowl", "name": "Bowling attack", "w": 1.0, "v": 1.5, "note": "Kuldeep took 4-40. West Indies' best figures were Chase's 1-64 as India cruised."},
-        {"id": "spin", "name": "Spin matchup", "w": 0.8, "v": 2, "note": "Kuldeep removed both West Indies openers to stop a 135-run start."},
-        {"id": "players", "name": "Key player form", "w": 0.8, "v": 2, "note": "Kohli 139* and Gill 110. Greaves made 101 for West Indies."},
-        {"id": "leaders", "name": "Captain & coach record", "w": 0.6, "v": 1, "note": "Gambhir coached India to the 2025 Champions Trophy. Hope and Sammy are rebuilding after West Indies missed the 2023 World Cup."},
-        {"id": "squad", "name": "Injuries & availability", "w": 1.0, "v": 0, "note": "No injury news for either side. Sammy plans to give all 15 squad members games, which may weaken West Indies' XI."},
-        {"id": "stakes", "name": "Motivation & rotation", "w": 0.6, "v": 0, "note": "West Indies must win to keep the series alive and want a benchmark before February's World Cup Qualifiers."}
+        {
+          "id": "form",
+          "name": "Recent form",
+          "w": 1.0,
+          "v": 3,
+          "note": "India won the 1st ODI by 8 wickets, chasing 296 in 41.4 overs."
+        },
+        {
+          "id": "h2h",
+          "name": "Head-to-head",
+          "w": 0.7,
+          "v": 3,
+          "note": "West Indies have not won a series in India for 24 years."
+        },
+        {
+          "id": "home",
+          "name": "Home advantage",
+          "w": 0.8,
+          "v": 3,
+          "note": "Home crowd and Indian pitches that suit India's spinners."
+        },
+        {
+          "id": "venue",
+          "name": "Venue record",
+          "w": 0.5,
+          "v": 0.5,
+          "note": "India's home venue, though Guwahati has hosted relatively few ODIs."
+        },
+        {
+          "id": "conditions",
+          "name": "Pitch, weather & toss",
+          "w": 0.5,
+          "v": 0,
+          "note": "Late-season rain is possible in Guwahati; forecast to be checked on match day."
+        },
+        {
+          "id": "bat",
+          "name": "Batting strength",
+          "w": 1.0,
+          "v": 2,
+          "note": "India's top three scored 281 of their 300 runs. West Indies' 295 relied on the openers and Jangoo."
+        },
+        {
+          "id": "bowl",
+          "name": "Bowling attack",
+          "w": 1.0,
+          "v": 1.5,
+          "note": "Kuldeep took 4-40. West Indies' best figures were Chase's 1-64 as India cruised."
+        },
+        {
+          "id": "spin",
+          "name": "Spin matchup",
+          "w": 0.8,
+          "v": 2,
+          "note": "Kuldeep removed both West Indies openers to stop a 135-run start."
+        },
+        {
+          "id": "players",
+          "name": "Key player form",
+          "w": 0.8,
+          "v": 2,
+          "note": "Kohli 139* and Gill 110. Greaves made 101 for West Indies."
+        },
+        {
+          "id": "leaders",
+          "name": "Captain & coach record",
+          "w": 0.6,
+          "v": 1,
+          "note": "Gambhir coached India to the 2025 Champions Trophy. Hope and Sammy are rebuilding after West Indies missed the 2023 World Cup."
+        },
+        {
+          "id": "squad",
+          "name": "Injuries & availability",
+          "w": 1.0,
+          "v": 0,
+          "note": "No injury news for either side. Sammy plans to give all 15 squad members games, which may weaken West Indies' XI."
+        },
+        {
+          "id": "stakes",
+          "name": "Motivation & rotation",
+          "w": 0.6,
+          "v": 0,
+          "note": "West Indies must win to keep the series alive and want a benchmark before February's World Cup Qualifiers."
+        }
       ],
       "players": [
-        {"team": "A", "name": "Virat Kohli", "role": "Batter", "stats": "139* off 88 balls with 9 sixes; 15,080 runs in 315 ODIs", "achievement": "55th ODI hundred, passed 15,000 ODI runs and became the first to 7,000 ODI runs at home.", "concern": "Returning after two months out of the side; workload is managed at this stage of his career."},
-        {"team": "A", "name": "Shubman Gill", "role": "Captain, batter", "stats": "110 off 108 balls (1st ODI)", "achievement": "Added 151 with Kohli to finish the chase.", "concern": "His first ODI series as captain, in Australia in 2025, was lost 2–1."},
-        {"team": "A", "name": "Kuldeep Yadav", "role": "Left-arm wrist-spinner", "stats": "4 for 40 in 10 overs (1st ODI)", "achievement": "Turned the game by removing both openers after a 135-run stand.", "concern": "None of note."},
-        {"team": "B", "name": "Justin Greaves", "role": "Batting all-rounder", "stats": "101 off 108 balls (1st ODI)", "achievement": "Hundred on Indian soil against a full-strength attack.", "concern": "Had little support after the openers fell."},
-        {"team": "B", "name": "John Campbell", "role": "Opening batter", "stats": "62 off 60 balls (1st ODI)", "achievement": "Shared a 135-run opening stand.", "concern": "Fell to Kuldeep, as West Indies struggled against wrist spin."},
-        {"team": "B", "name": "Amir Jangoo", "role": "Batter", "stats": "58* off 43 balls (1st ODI)", "achievement": "Fast finishing lifted West Indies to 295.", "concern": "West Indies' middle order again left too much to one batter."}
+        {
+          "team": "A",
+          "name": "Virat Kohli",
+          "role": "Batter",
+          "stats": "139* off 88 balls with 9 sixes; 15,080 runs in 315 ODIs",
+          "achievement": "55th ODI hundred, passed 15,000 ODI runs and became the first to 7,000 ODI runs at home.",
+          "concern": "Returning after two months out of the side; workload is managed at this stage of his career."
+        },
+        {
+          "team": "A",
+          "name": "Shubman Gill",
+          "role": "Captain, batter",
+          "stats": "110 off 108 balls (1st ODI)",
+          "achievement": "Added 151 with Kohli to finish the chase.",
+          "concern": "His first ODI series as captain, in Australia in 2025, was lost 2–1."
+        },
+        {
+          "team": "A",
+          "name": "Kuldeep Yadav",
+          "role": "Left-arm wrist-spinner",
+          "stats": "4 for 40 in 10 overs (1st ODI)",
+          "achievement": "Turned the game by removing both openers after a 135-run stand.",
+          "concern": "None of note."
+        },
+        {
+          "team": "B",
+          "name": "Justin Greaves",
+          "role": "Batting all-rounder",
+          "stats": "101 off 108 balls (1st ODI)",
+          "achievement": "Hundred on Indian soil against a full-strength attack.",
+          "concern": "Had little support after the openers fell."
+        },
+        {
+          "team": "B",
+          "name": "John Campbell",
+          "role": "Opening batter",
+          "stats": "62 off 60 balls (1st ODI)",
+          "achievement": "Shared a 135-run opening stand.",
+          "concern": "Fell to Kuldeep, as West Indies struggled against wrist spin.",
+          "wiki": "John Campbell (cricketer)"
+        },
+        {
+          "team": "B",
+          "name": "Amir Jangoo",
+          "role": "Batter",
+          "stats": "58* off 43 balls (1st ODI)",
+          "achievement": "Fast finishing lifted West Indies to 295.",
+          "concern": "West Indies' middle order again left too much to one batter."
+        }
       ],
       "leaders": [
-        {"team": "A", "role": "Captain", "name": "Shubman Gill", "record": "ODI captain since October 2025.", "achievement": "Scored 754 runs in his first Test series as captain, in England in 2025.", "concern": "Lost his first ODI series as captain 2–1 in Australia."},
-        {"team": "A", "role": "Head coach", "name": "Gautam Gambhir", "record": "Head coach across formats since 2024.", "achievement": "India won the 2025 Champions Trophy with him as coach.", "concern": "India were whitewashed 3–0 at home by New Zealand in Tests in 2024."},
-        {"team": "B", "role": "Captain", "name": "Shai Hope", "record": "Captain and wicketkeeper-batter.", "achievement": "West Indies' most consistent ODI batter of recent years.", "concern": "West Indies failed to qualify for the 2023 World Cup."},
-        {"team": "B", "role": "Head coach", "name": "Daren Sammy", "record": "Head coach; twice T20 World Cup-winning captain as a player.", "achievement": "Has called this series a benchmark before the 2027 World Cup Qualifiers.", "concern": "West Indies have not won a series in India for 24 years."}
+        {
+          "team": "A",
+          "role": "Captain",
+          "name": "Shubman Gill",
+          "record": "ODI captain since October 2025.",
+          "achievement": "Scored 754 runs in his first Test series as captain, in England in 2025.",
+          "concern": "Lost his first ODI series as captain 2–1 in Australia."
+        },
+        {
+          "team": "A",
+          "role": "Head coach",
+          "name": "Gautam Gambhir",
+          "record": "Head coach across formats since 2024.",
+          "achievement": "India won the 2025 Champions Trophy with him as coach.",
+          "concern": "India were whitewashed 3–0 at home by New Zealand in Tests in 2024."
+        },
+        {
+          "team": "B",
+          "role": "Captain",
+          "name": "Shai Hope",
+          "record": "Captain and wicketkeeper-batter.",
+          "achievement": "West Indies' most consistent ODI batter of recent years.",
+          "concern": "West Indies failed to qualify for the 2023 World Cup."
+        },
+        {
+          "team": "B",
+          "role": "Head coach",
+          "name": "Daren Sammy",
+          "record": "Head coach; twice T20 World Cup-winning captain as a player.",
+          "achievement": "Has called this series a benchmark before the 2027 World Cup Qualifiers.",
+          "concern": "West Indies have not won a series in India for 24 years."
+        }
       ]
     },
     {
@@ -104,30 +406,158 @@
       "drawPct": 0,
       "summary": "Provisional. Based on the 1st ODI only; it will be updated after Guwahati.",
       "factors": [
-        {"id": "form", "name": "Recent form", "w": 1.0, "v": 3, "note": "India won the 1st ODI by 8 wickets."},
-        {"id": "h2h", "name": "Head-to-head", "w": 0.7, "v": 3, "note": "West Indies have not won a series in India for 24 years."},
-        {"id": "home", "name": "Home advantage", "w": 0.8, "v": 3, "note": "Home crowd for India."},
-        {"id": "venue", "name": "Venue record", "w": 0.5, "v": 0, "note": "Mullanpur is a newer venue with little ODI history."},
-        {"id": "conditions", "name": "Pitch, weather & toss", "w": 0.5, "v": 0, "note": "To be checked closer to match day."},
-        {"id": "bat", "name": "Batting strength", "w": 1.0, "v": 1.5, "note": "India's top three dominated the 1st ODI."},
-        {"id": "bowl", "name": "Bowling attack", "w": 1.0, "v": 1.5, "note": "Kuldeep took 4-40 in the 1st ODI; West Indies' attack was expensive."},
-        {"id": "spin", "name": "Spin matchup", "w": 0.8, "v": 2, "note": "West Indies struggled against Kuldeep's wrist spin."},
-        {"id": "players", "name": "Key player form", "w": 0.8, "v": 1.5, "note": "Kohli and Gill both scored hundreds in the 1st ODI."},
-        {"id": "leaders", "name": "Captain & coach record", "w": 0.6, "v": 1, "note": "India's leadership has the stronger recent record."},
-        {"id": "squad", "name": "Injuries & availability", "w": 1.0, "v": 0, "note": "No injury news yet. Both sides may rotate."},
-        {"id": "stakes", "name": "Motivation & rotation", "w": 0.6, "v": 0, "note": "Unknown until the 2nd ODI result. India may rest players if the series is already won."}
+        {
+          "id": "form",
+          "name": "Recent form",
+          "w": 1.0,
+          "v": 3,
+          "note": "India won the 1st ODI by 8 wickets."
+        },
+        {
+          "id": "h2h",
+          "name": "Head-to-head",
+          "w": 0.7,
+          "v": 3,
+          "note": "West Indies have not won a series in India for 24 years."
+        },
+        {
+          "id": "home",
+          "name": "Home advantage",
+          "w": 0.8,
+          "v": 3,
+          "note": "Home crowd for India."
+        },
+        {
+          "id": "venue",
+          "name": "Venue record",
+          "w": 0.5,
+          "v": 0,
+          "note": "Mullanpur is a newer venue with little ODI history."
+        },
+        {
+          "id": "conditions",
+          "name": "Pitch, weather & toss",
+          "w": 0.5,
+          "v": 0,
+          "note": "To be checked closer to match day."
+        },
+        {
+          "id": "bat",
+          "name": "Batting strength",
+          "w": 1.0,
+          "v": 1.5,
+          "note": "India's top three dominated the 1st ODI."
+        },
+        {
+          "id": "bowl",
+          "name": "Bowling attack",
+          "w": 1.0,
+          "v": 1.5,
+          "note": "Kuldeep took 4-40 in the 1st ODI; West Indies' attack was expensive."
+        },
+        {
+          "id": "spin",
+          "name": "Spin matchup",
+          "w": 0.8,
+          "v": 2,
+          "note": "West Indies struggled against Kuldeep's wrist spin."
+        },
+        {
+          "id": "players",
+          "name": "Key player form",
+          "w": 0.8,
+          "v": 1.5,
+          "note": "Kohli and Gill both scored hundreds in the 1st ODI."
+        },
+        {
+          "id": "leaders",
+          "name": "Captain & coach record",
+          "w": 0.6,
+          "v": 1,
+          "note": "India's leadership has the stronger recent record."
+        },
+        {
+          "id": "squad",
+          "name": "Injuries & availability",
+          "w": 1.0,
+          "v": 0,
+          "note": "No injury news yet. Both sides may rotate."
+        },
+        {
+          "id": "stakes",
+          "name": "Motivation & rotation",
+          "w": 0.6,
+          "v": 0,
+          "note": "Unknown until the 2nd ODI result. India may rest players if the series is already won."
+        }
       ],
       "players": [
-        {"team": "A", "name": "Virat Kohli", "role": "Batter", "stats": "15,080 runs in 315 ODIs, 55 hundreds", "achievement": "First batter to 7,000 ODI runs in home matches.", "concern": "May be rested if the series is decided."},
-        {"team": "A", "name": "Kuldeep Yadav", "role": "Left-arm wrist-spinner", "stats": "4 for 40 in the 1st ODI", "achievement": "Match-winning spell in the opener.", "concern": "None of note."},
-        {"team": "B", "name": "Justin Greaves", "role": "Batting all-rounder", "stats": "101 in the 1st ODI", "achievement": "West Indies' top scorer in the series so far.", "concern": "Needs more support from the middle order."},
-        {"team": "B", "name": "Shai Hope", "role": "Captain, wicketkeeper-batter", "stats": "To be updated after the 2nd ODI", "achievement": "West Indies' most consistent ODI batter of recent years.", "concern": "Quiet start to the series."}
+        {
+          "team": "A",
+          "name": "Virat Kohli",
+          "role": "Batter",
+          "stats": "15,080 runs in 315 ODIs, 55 hundreds",
+          "achievement": "First batter to 7,000 ODI runs in home matches.",
+          "concern": "May be rested if the series is decided."
+        },
+        {
+          "team": "A",
+          "name": "Kuldeep Yadav",
+          "role": "Left-arm wrist-spinner",
+          "stats": "4 for 40 in the 1st ODI",
+          "achievement": "Match-winning spell in the opener.",
+          "concern": "None of note."
+        },
+        {
+          "team": "B",
+          "name": "Justin Greaves",
+          "role": "Batting all-rounder",
+          "stats": "101 in the 1st ODI",
+          "achievement": "West Indies' top scorer in the series so far.",
+          "concern": "Needs more support from the middle order."
+        },
+        {
+          "team": "B",
+          "name": "Shai Hope",
+          "role": "Captain, wicketkeeper-batter",
+          "stats": "To be updated after the 2nd ODI",
+          "achievement": "West Indies' most consistent ODI batter of recent years.",
+          "concern": "Quiet start to the series."
+        }
       ],
       "leaders": [
-        {"team": "A", "role": "Captain", "name": "Shubman Gill", "record": "ODI captain since October 2025.", "achievement": "Hundred in the 1st ODI of this series.", "concern": "Lost his first ODI series as captain 2–1 in Australia."},
-        {"team": "A", "role": "Head coach", "name": "Gautam Gambhir", "record": "Head coach across formats since 2024.", "achievement": "India won the 2025 Champions Trophy with him as coach.", "concern": "India were whitewashed 3–0 at home by New Zealand in Tests in 2024."},
-        {"team": "B", "role": "Captain", "name": "Shai Hope", "record": "Captain and wicketkeeper-batter.", "achievement": "West Indies' most consistent ODI batter of recent years.", "concern": "West Indies failed to qualify for the 2023 World Cup."},
-        {"team": "B", "role": "Head coach", "name": "Daren Sammy", "record": "Head coach; twice T20 World Cup-winning captain as a player.", "achievement": "Has called this series a benchmark before the 2027 World Cup Qualifiers.", "concern": "West Indies have not won a series in India for 24 years."}
+        {
+          "team": "A",
+          "role": "Captain",
+          "name": "Shubman Gill",
+          "record": "ODI captain since October 2025.",
+          "achievement": "Hundred in the 1st ODI of this series.",
+          "concern": "Lost his first ODI series as captain 2–1 in Australia."
+        },
+        {
+          "team": "A",
+          "role": "Head coach",
+          "name": "Gautam Gambhir",
+          "record": "Head coach across formats since 2024.",
+          "achievement": "India won the 2025 Champions Trophy with him as coach.",
+          "concern": "India were whitewashed 3–0 at home by New Zealand in Tests in 2024."
+        },
+        {
+          "team": "B",
+          "role": "Captain",
+          "name": "Shai Hope",
+          "record": "Captain and wicketkeeper-batter.",
+          "achievement": "West Indies' most consistent ODI batter of recent years.",
+          "concern": "West Indies failed to qualify for the 2023 World Cup."
+        },
+        {
+          "team": "B",
+          "role": "Head coach",
+          "name": "Daren Sammy",
+          "record": "Head coach; twice T20 World Cup-winning captain as a player.",
+          "achievement": "Has called this series a benchmark before the 2027 World Cup Qualifiers.",
+          "concern": "West Indies have not won a series in India for 24 years."
+        }
       ]
     },
     {
@@ -144,30 +574,159 @@
       "drawPct": 20,
       "summary": "Provisional. Home advantage and Maharaj against Australia's weakness to left-arm spin, set against South Africa's injured fast bowlers and Australia's strong Test attack.",
       "factors": [
-        {"id": "form", "name": "Recent form", "w": 1.0, "v": 0, "note": "No recent Tests between these sides to compare; will update once warm-up form is known."},
-        {"id": "h2h", "name": "Head-to-head", "w": 0.7, "v": 1, "note": "South Africa beat Australia in the 2025 World Test Championship final and won the last Test series in South Africa, 3–1 in 2018."},
-        {"id": "home", "name": "Home advantage", "w": 0.8, "v": 3, "note": "Home Test for South Africa."},
-        {"id": "venue", "name": "Venue record", "w": 0.5, "v": 0, "note": "Kingsmead record to be checked."},
-        {"id": "conditions", "name": "Pitch, weather & toss", "w": 0.5, "v": 0, "note": "Early-season Durban conditions; forecast to be checked closer to the match."},
-        {"id": "bat", "name": "Batting strength", "w": 1.0, "v": 0, "note": "Test squads not yet confirmed."},
-        {"id": "bowl", "name": "Bowling attack", "w": 1.0, "v": -1.5, "note": "Australia's Test attack is led by Cummins and Hazlewood. SA's depends on who recovers."},
-        {"id": "spin", "name": "Spin matchup", "w": 0.8, "v": 1.5, "note": "Australia have struggled against Maharaj and left-arm spin in the ODI series."},
-        {"id": "players", "name": "Key player form", "w": 0.8, "v": 0, "note": "To be scored once squads are named."},
-        {"id": "leaders", "name": "Captain & coach record", "w": 0.6, "v": 0, "note": "Both captains have won a World Test Championship final: Cummins in 2023, Bavuma in 2025."},
-        {"id": "squad", "name": "Injuries & availability", "w": 1.0, "v": -1.5, "note": "Rabada, Ngidi, Baartman and Maphaka all have hamstring injuries; their Test availability is unclear."},
-        {"id": "stakes", "name": "Motivation & rotation", "w": 0.6, "v": 0, "note": "World Test Championship points at stake for both sides."}
+        {
+          "id": "form",
+          "name": "Recent form",
+          "w": 1.0,
+          "v": 0,
+          "note": "No recent Tests between these sides to compare; will update once warm-up form is known."
+        },
+        {
+          "id": "h2h",
+          "name": "Head-to-head",
+          "w": 0.7,
+          "v": 1,
+          "note": "South Africa beat Australia in the 2025 World Test Championship final and won the last Test series in South Africa, 3–1 in 2018."
+        },
+        {
+          "id": "home",
+          "name": "Home advantage",
+          "w": 0.8,
+          "v": 3,
+          "note": "Home Test for South Africa."
+        },
+        {
+          "id": "venue",
+          "name": "Venue record",
+          "w": 0.5,
+          "v": 0,
+          "note": "Kingsmead record to be checked."
+        },
+        {
+          "id": "conditions",
+          "name": "Pitch, weather & toss",
+          "w": 0.5,
+          "v": 0,
+          "note": "Early-season Durban conditions; forecast to be checked closer to the match."
+        },
+        {
+          "id": "bat",
+          "name": "Batting strength",
+          "w": 1.0,
+          "v": 0,
+          "note": "Test squads not yet confirmed."
+        },
+        {
+          "id": "bowl",
+          "name": "Bowling attack",
+          "w": 1.0,
+          "v": -1.5,
+          "note": "Australia's Test attack is led by Cummins and Hazlewood. SA's depends on who recovers."
+        },
+        {
+          "id": "spin",
+          "name": "Spin matchup",
+          "w": 0.8,
+          "v": 1.5,
+          "note": "Australia have struggled against Maharaj and left-arm spin in the ODI series."
+        },
+        {
+          "id": "players",
+          "name": "Key player form",
+          "w": 0.8,
+          "v": 0,
+          "note": "To be scored once squads are named."
+        },
+        {
+          "id": "leaders",
+          "name": "Captain & coach record",
+          "w": 0.6,
+          "v": 0,
+          "note": "Both captains have won a World Test Championship final: Cummins in 2023, Bavuma in 2025."
+        },
+        {
+          "id": "squad",
+          "name": "Injuries & availability",
+          "w": 1.0,
+          "v": -1.5,
+          "note": "Rabada, Ngidi, Baartman and Maphaka all have hamstring injuries; their Test availability is unclear."
+        },
+        {
+          "id": "stakes",
+          "name": "Motivation & rotation",
+          "w": 0.6,
+          "v": 0,
+          "note": "World Test Championship points at stake for both sides."
+        }
       ],
       "players": [
-        {"team": "A", "name": "Keshav Maharaj", "role": "Left-arm spinner", "stats": "Key wickets throughout the ODI series", "achievement": "Australia's batters have not found an answer to him.", "concern": "Durban pitches often help seam more than spin early on."},
-        {"team": "A", "name": "Temba Bavuma", "role": "Captain, batter", "stats": "103 in the 2nd ODI", "achievement": "World Test Championship-winning captain.", "concern": "Leading a side missing several fast bowlers."},
-        {"team": "B", "name": "Pat Cummins", "role": "Captain, fast bowler", "stats": "Played only two of Australia's last 31 ODIs", "achievement": "Won the 2023 World Test Championship and 2023 World Cup as captain.", "concern": "Limited match time this year."},
-        {"team": "B", "name": "Travis Head", "role": "Batter", "stats": "84 in the 2nd ODI", "achievement": "Match-winning hundreds in the 2023 WTC and World Cup finals.", "concern": "Australia's batting has struggled against spin on this tour."}
+        {
+          "team": "A",
+          "name": "Keshav Maharaj",
+          "role": "Left-arm spinner",
+          "stats": "Key wickets throughout the ODI series",
+          "achievement": "Australia's batters have not found an answer to him.",
+          "concern": "Durban pitches often help seam more than spin early on."
+        },
+        {
+          "team": "A",
+          "name": "Temba Bavuma",
+          "role": "Captain, batter",
+          "stats": "103 in the 2nd ODI",
+          "achievement": "World Test Championship-winning captain.",
+          "concern": "Leading a side missing several fast bowlers."
+        },
+        {
+          "team": "B",
+          "name": "Pat Cummins",
+          "role": "Captain, fast bowler",
+          "stats": "Played only two of Australia's last 31 ODIs",
+          "achievement": "Won the 2023 World Test Championship and 2023 World Cup as captain.",
+          "concern": "Limited match time this year."
+        },
+        {
+          "team": "B",
+          "name": "Travis Head",
+          "role": "Batter",
+          "stats": "84 in the 2nd ODI",
+          "achievement": "Match-winning hundreds in the 2023 WTC and World Cup finals.",
+          "concern": "Australia's batting has struggled against spin on this tour."
+        }
       ],
       "leaders": [
-        {"team": "A", "role": "Captain", "name": "Temba Bavuma", "record": "Test captain.", "achievement": "Led South Africa to the 2023–25 World Test Championship title against Australia.", "concern": "Fast-bowling depth is badly hit by injuries."},
-        {"team": "A", "role": "Head coach", "name": "Shukri Conrad", "record": "Test coach since January 2023.", "achievement": "Coached SA to the 2023–25 World Test Championship title.", "concern": "Eight Tests in four months will test the squad's depth."},
-        {"team": "B", "role": "Captain", "name": "Pat Cummins (Steve Smith vice-captain)", "record": "Test captain since 2021.", "achievement": "2023 World Test Championship and 2023 World Cup winner.", "concern": "Lost the 2025 World Test Championship final to South Africa."},
-        {"team": "B", "role": "Head coach", "name": "Andrew McDonald", "record": "Head coach across formats.", "achievement": "Coached Australia to the 2023 World Test Championship and World Cup.", "concern": "Australia lost the 2025 World Test Championship final to South Africa."}
+        {
+          "team": "A",
+          "role": "Captain",
+          "name": "Temba Bavuma",
+          "record": "Test captain.",
+          "achievement": "Led South Africa to the 2023–25 World Test Championship title against Australia.",
+          "concern": "Fast-bowling depth is badly hit by injuries."
+        },
+        {
+          "team": "A",
+          "role": "Head coach",
+          "name": "Shukri Conrad",
+          "record": "Test coach since January 2023.",
+          "achievement": "Coached SA to the 2023–25 World Test Championship title.",
+          "concern": "Eight Tests in four months will test the squad's depth."
+        },
+        {
+          "team": "B",
+          "role": "Captain",
+          "name": "Pat Cummins (Steve Smith vice-captain)",
+          "record": "Test captain since 2021.",
+          "achievement": "2023 World Test Championship and 2023 World Cup winner.",
+          "concern": "Lost the 2025 World Test Championship final to South Africa."
+        },
+        {
+          "team": "B",
+          "role": "Head coach",
+          "name": "Andrew McDonald",
+          "record": "Head coach across formats.",
+          "achievement": "Coached Australia to the 2023 World Test Championship and World Cup.",
+          "concern": "Australia lost the 2025 World Test Championship final to South Africa.",
+          "wiki": "Andrew McDonald (cricketer)"
+        }
       ]
     }
   ]
